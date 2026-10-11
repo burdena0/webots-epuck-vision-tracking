@@ -71,7 +71,7 @@ def main():
                 raise RuntimeError(f'webots failed for {case}/{backend}: {result.stdout[-2500:]} {result.stderr[-2500:]}')
             rows.append(json.loads(output.read_text()))
             print(json.dumps(rows[-1]), flush=True)
-    (reports / 'benchmark_summary.json').write_text(json.dumps(rows, indent=2) + '\n')
+    (reports / 'benchmark_summary.json').write_text(json.dumps(rows, indent=2) + '\n', newline='\n')
 
 if __name__ == '__main__':
     main()

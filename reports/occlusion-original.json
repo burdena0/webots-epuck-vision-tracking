@@ -8,8 +8,8 @@
   "travelled_m": 0.314,
   "mean_visible_alignment_error": 0.0174,
   "mean_centroid_difference_vs_hsv_pixels": 5.866,
-  "inference_median_ms": 0.3,
-  "inference_p95_ms": 0.385,
+  "inference_median_ms": 0.302,
+  "inference_p95_ms": 0.406,
   "max_forward_speed_during_occlusion_rad_s": 0.5,
   "blocked_samples": 238,
   "final_position": [

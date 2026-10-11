@@ -54,6 +54,6 @@ row = {'case': case, 'backend': config['backend'], 'samples': len(packets), 'dur
        'states': sorted(set(p['state'] for p in packets))}
 reports = ROOT / 'reports'
 reports.mkdir(exist_ok=True)
-(reports / f"{config['case']}-{config['backend']}.json").write_text(json.dumps(row, indent=2) + '\n')
+(reports / f"{config['case']}-{config['backend']}.json").write_text(json.dumps(row, indent=2) + '\n', newline='\n')
 print('benchmark ' + json.dumps(row), flush=True)
 robot.simulationQuit(0 if packets else 2)

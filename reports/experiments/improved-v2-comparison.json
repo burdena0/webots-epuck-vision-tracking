@@ -1,0 +1,66 @@
+{
+  "protocol": "fresh seeds after validation-only checkpoint selection; fixed 0.65 mask threshold",
+  "scope": "procedural synthetic images; dim and blur are stress checks, not webots accuracy",
+  "results": [
+    {
+      "case": "fresh",
+      "seed": 202610210,
+      "images": 1000,
+      "baseline": {
+        "mask_iou": 0.9311,
+        "centroid_mae_pixels_at_96_width": 0.303,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 4,
+        "images": 1000
+      },
+      "improved": {
+        "mask_iou": 0.9792,
+        "centroid_mae_pixels_at_96_width": 0.133,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 3,
+        "images": 1000
+      },
+      "iou_gain_percentage_points": 4.81
+    },
+    {
+      "case": "dim",
+      "seed": 202610211,
+      "images": 320,
+      "baseline": {
+        "mask_iou": 0.908,
+        "centroid_mae_pixels_at_96_width": 0.85,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 4,
+        "images": 320
+      },
+      "improved": {
+        "mask_iou": 0.8531,
+        "centroid_mae_pixels_at_96_width": 1.427,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 7,
+        "images": 320
+      },
+      "iou_gain_percentage_points": -5.49
+    },
+    {
+      "case": "blurred",
+      "seed": 202610212,
+      "images": 320,
+      "baseline": {
+        "mask_iou": 0.9021,
+        "centroid_mae_pixels_at_96_width": 0.21,
+        "missed_positive_images": 1,
+        "false_positive_negative_images": 2,
+        "images": 320
+      },
+      "improved": {
+        "mask_iou": 0.9253,
+        "centroid_mae_pixels_at_96_width": 0.181,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 1,
+        "images": 320
+      },
+      "iou_gain_percentage_points": 2.32
+    }
+  ]
+}

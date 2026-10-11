@@ -7,9 +7,9 @@
   "minimum_target_gap_m": 0.3229,
   "travelled_m": 0.0002,
   "mean_visible_alignment_error": 0.0046,
-  "mean_centroid_difference_vs_hsv_pixels": 1.775,
-  "inference_median_ms": 1.042,
-  "inference_p95_ms": 1.392,
+  "mean_centroid_difference_vs_hsv_pixels": 1.451,
+  "inference_median_ms": 1.071,
+  "inference_p95_ms": 1.407,
   "max_forward_speed_during_occlusion_rad_s": null,
   "blocked_samples": 0,
   "final_position": [

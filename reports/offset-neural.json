@@ -4,18 +4,18 @@
   "samples": 1249,
   "duration_sim_seconds": 40.0,
   "arrival_sim_seconds": 8.416,
-  "minimum_target_gap_m": 0.0195,
-  "travelled_m": 0.32,
-  "mean_visible_alignment_error": 0.0075,
-  "mean_centroid_difference_vs_hsv_pixels": 0.883,
-  "inference_median_ms": 1.267,
-  "inference_p95_ms": 1.585,
+  "minimum_target_gap_m": 0.0194,
+  "travelled_m": 0.3195,
+  "mean_visible_alignment_error": 0.0076,
+  "mean_centroid_difference_vs_hsv_pixels": 1.416,
+  "inference_median_ms": 1.242,
+  "inference_p95_ms": 1.607,
   "max_forward_speed_during_occlusion_rad_s": null,
   "blocked_samples": 988,
   "final_position": [
-    0.3034733867560231,
-    0.10115345265393534,
-    -6.394897038178131e-05
+    0.3036418165511604,
+    0.09897417063261382,
+    -6.394219655073141e-05
   ],
   "states": [
     "approach",

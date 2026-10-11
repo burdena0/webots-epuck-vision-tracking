@@ -8,6 +8,7 @@ code, trained weights, learning curves, simulator results and tests.
 
 - a 1,113 parameter pytorch cnn that predicts the target mask from rgb pixels
 - generated training images with exact labels, shadows, clutter and missing targets
+- brightness augmentation, dice loss and a cosine learning-rate schedule
 - separate training, validation and test seeds
 - hsv and original-controller baselines so the comparisons are reproducible
 - proportional steering, smoother wheel speeds and slower approaches
@@ -42,19 +43,28 @@ to compare modes, set the robot's controllerargs to `--backend hsv` or
 .\.venv\Scripts\python.exe scripts/train_model.py
 ```
 
-this starts from random weights and trains for 12 epochs. it saves the best model
-based on validation iou, then evaluates the test set once. the model used by webots
+this starts from random weights and trains on 4,800 images for 36 epochs. it varies
+brightness from 0.5 to 1.25 each time an image is seen. the best checkpoint is picked
+using the mean iou on standard and dim validation views. the model used by webots
 is `models/target_net.pt`. loss history, checkpoints and settings go in `runs/default`.
-the plots and test results go in `reports`.
+the plots and measurements go in `reports`.
 
 for another experiment:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts/train_model.py --epochs 20 --lr 0.001 --train-images 2400 --run-name longer-run
+.\.venv\Scripts\python.exe scripts/train_model.py --run-name improved-v3
+.\.venv\Scripts\python.exe scripts/compare_models.py
 ```
 
 each training run replaces the active model and report. keep the run folders if
-you want to compare experiments. dont keep changing settings based on the test set.
+you want to compare experiments. `models/baseline_target_net.pt` keeps the original
+model for comparison. the 320-image legacy test was reused, so its a diagnostic now.
+the final comparison uses new seeds reserved before v3 training. if you tune based
+on those results, you need another untouched audit set.
+
+the first longer run improved normal-light masks but regressed in dim light. v3
+adds brightness variation to fix that. both experiment reports are kept, including
+the remaining small blur regression. read `MODEL_CARD.md` for the full comparison.
 
 ## test it
 
@@ -74,6 +84,7 @@ webots measurements were run locally.
 this is a simulation project. the training set is procedural, and the model learns
 red-box appearance rather than general object recognition. different colors,
 lighting, shapes and multiple similar red objects still need more data and tests.
+blur remains a weakness: v3 scored slightly below the original in that stress check.
 proximity thresholds are raw simulator readings, not distances. blocked means stop;
 this project doesnt plan a route around obstacles. no physical robot results are
 claimed. the world references cyberbotics assets under their own license.

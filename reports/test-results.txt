@@ -12,6 +12,6 @@ test_gray_scene_and_tiny_specks_are_rejected (test_neural.NeuralTests.test_gray_
 test_unseen_box_positions_and_shading (test_neural.NeuralTests.test_unseen_box_positions_and_shading) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.076s
+Ran 10 tests in 0.104s
 
 OK

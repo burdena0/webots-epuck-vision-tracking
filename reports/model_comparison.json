@@ -1,0 +1,71 @@
+{
+  "protocol": "fresh seeds after validation-only checkpoint selection; fixed 0.65 mask threshold",
+  "development_note": "earlier v2 audit became diagnostic after its dim-light regression was used to choose brightness augmentation; these seeds were reserved for v3",
+  "scope": "procedural synthetic images; dim and blur are stress checks, not webots accuracy",
+  "results": [
+    {
+      "case": "fresh",
+      "seed": 202610220,
+      "images": 1000,
+      "baseline": {
+        "mask_iou": 0.9374,
+        "centroid_mae_pixels_at_96_width": 0.267,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 6,
+        "images": 1000
+      },
+      "improved": {
+        "mask_iou": 0.9591,
+        "centroid_mae_pixels_at_96_width": 0.263,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 2,
+        "images": 1000
+      },
+      "iou_gain_percentage_points": 2.17
+    },
+    {
+      "case": "dim",
+      "seed": 202610221,
+      "images": 320,
+      "baseline": {
+        "mask_iou": 0.8755,
+        "centroid_mae_pixels_at_96_width": 1.201,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 1,
+        "images": 320
+      },
+      "improved": {
+        "mask_iou": 0.9438,
+        "centroid_mae_pixels_at_96_width": 0.496,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 0,
+        "images": 320
+      },
+      "iou_gain_percentage_points": 6.83
+    },
+    {
+      "case": "blurred",
+      "seed": 202610222,
+      "images": 320,
+      "baseline": {
+        "mask_iou": 0.9155,
+        "centroid_mae_pixels_at_96_width": 0.27,
+        "missed_positive_images": 0,
+        "false_positive_negative_images": 0,
+        "images": 320
+      },
+      "improved": {
+        "mask_iou": 0.9121,
+        "centroid_mae_pixels_at_96_width": 0.209,
+        "missed_positive_images": 1,
+        "false_positive_negative_images": 0,
+        "images": 320
+      },
+      "iou_gain_percentage_points": -0.34
+    }
+  ],
+  "model_sha256": {
+    "baseline": "a2cb1a5fb107c61ca62f98963a76f0500976c5f483654105a3cf7584d0fe2dbb",
+    "improved": "2c2b318a1f0db9a658d867c3d18608a4eed1d82041ebb2ce04e600332320db3d"
+  }
+}

@@ -66,14 +66,18 @@ def metrics(model, x, y):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--epochs', type=int, default=12)
+    parser.add_argument('--epochs', type=int, default=36)
     parser.add_argument('--lr', type=float, default=0.003)
     parser.add_argument('--seed', type=int, default=20261011)
-    parser.add_argument('--train-images', type=int, default=1600)
+    parser.add_argument('--train-images', type=int, default=4800)
     parser.add_argument('--batch-size', type=int, default=64)
     parser.add_argument('--run-name', default='default')
+    parser.add_argument('--schedule', choices=['none', 'cosine'], default='cosine')
+    parser.add_argument('--dice-weight', type=float, default=0.25)
+    parser.add_argument('--augmentation', choices=['none', 'brightness'], default='brightness')
+    parser.add_argument('--selection', choices=['standard', 'balanced'], default='balanced')
     args = parser.parse_args()
-    if args.epochs < 1 or args.train_images < 64 or args.batch_size < 1 or args.lr <= 0:
+    if args.epochs < 1 or args.train_images < 64 or args.batch_size < 1 or args.lr <= 0 or args.dice_weight < 0:
         parser.error('use positive settings and at least 64 training images')
     if not args.run_name.replace('-', '').replace('_', '').isalnum():
         parser.error('run name needs letters, numbers, underscores or hyphens')
@@ -84,6 +88,7 @@ def main():
     val_x, val_y = dataset(320, args.seed + 1)
     model = TargetNet()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.epochs, eta_min=args.lr * 0.1) if args.schedule == 'cosine' else None
     loss_fn = nn.BCEWithLogitsLoss(pos_weight=torch.tensor([3.0]))
     best_iou, best_state, history = -1, None, []
     run = ROOT / 'runs' / args.run_name
@@ -94,20 +99,38 @@ def main():
         indices = torch.randperm(len(train_x))
         losses = []
         for batch in indices.split(args.batch_size):
-            loss = loss_fn(model(train_x[batch]), train_y[batch])
+            images = train_x[batch]
+            if args.augmentation == 'brightness':
+                # keep the shape labels. vary the light each time we see an image
+                brightness = 0.5 + torch.rand(len(batch), 1, 1, 1) * 0.75
+                images = (images * brightness).clamp(0, 1)
+            logits = model(images)
+            loss = loss_fn(logits, train_y[batch])
+            if args.dice_weight:
+                probabilities = logits.sigmoid()
+                intersection = (probabilities * train_y[batch]).sum((1, 2, 3))
+                denominator = probabilities.sum((1, 2, 3)) + train_y[batch].sum((1, 2, 3))
+                dice_loss = (1 - (2 * intersection + 1) / (denominator + 1)).mean()
+                loss = loss + args.dice_weight * dice_loss
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
             losses.append(float(loss.detach()))
         score = metrics(model, val_x, val_y)
-        history.append({'epoch': epoch + 1, 'loss': round(float(np.mean(losses)), 5), **score})
-        if score['mask_iou'] > best_iou:
-            best_iou = score['mask_iou']
+        dim_score = metrics(model, val_x * 0.65, val_y)
+        selection_iou = score['mask_iou'] if args.selection == 'standard' else (score['mask_iou'] + dim_score['mask_iou']) / 2
+        history.append({'epoch': epoch + 1, 'loss': round(float(np.mean(losses)), 5),
+                        'learning_rate': optimizer.param_groups[0]['lr'], **score,
+                        'dim_validation_iou': dim_score['mask_iou'], 'selection_iou': selection_iou})
+        if selection_iou > best_iou:
+            best_iou = selection_iou
             best_state = {key: value.detach().clone() for key, value in model.state_dict().items()}
         print(json.dumps(history[-1]), flush=True)
-        (run / 'history.json').write_text(json.dumps(history, indent=2) + '\n')
+        (run / 'history.json').write_text(json.dumps(history, indent=2) + '\n', newline='\n')
         torch.save({'epoch': epoch + 1, 'model': model.state_dict(), 'optimizer': optimizer.state_dict(),
                     'settings': vars(args)}, run / 'last_checkpoint.pt')
+        if scheduler is not None:
+            scheduler.step()
     torch.save({'model': best_state, 'settings': vars(args), 'best_validation_iou': best_iou}, run / 'best_checkpoint.pt')
     model.load_state_dict(best_state)
     model.eval()
@@ -119,7 +142,9 @@ def main():
     report = {'data': 'procedural rgb rectangles; exact visible-shape masks; synthetic only', 'train_seed': args.seed,
               'validation_seed': args.seed + 1, 'test_seed': args.seed + 2, 'train_images': len(train_x), 'validation_images': len(val_x),
               'parameters': sum(p.numel() for p in model.parameters()), 'training_seconds': round(time.perf_counter() - started, 2),
-              'settings': vars(args), 'torch_version': torch.__version__, 'history': history, 'test': metrics(model, test_x, test_y)}
+              'settings': vars(args), 'torch_version': torch.__version__, 'history': history,
+              'checkpoint_selection': args.selection + ' validation mask iou; balanced means standard and 0.65-brightness mean',
+              'best_validation_score': best_iou, 'test': metrics(model, test_x, test_y)}
     intersection = union = 0
     for image, truth in zip(test_x, test_y):
         rgb = (image.numpy().transpose(1, 2, 0) * 255).astype(np.uint8)
@@ -130,8 +155,8 @@ def main():
         intersection += int((pred & actual).sum())
         union += int((pred | actual).sum())
     report['hsv_test_mask_iou'] = round(intersection / max(union, 1), 4)
-    (reports / 'training.json').write_text(json.dumps(report, indent=2) + '\n')
-    (run / 'training.json').write_text(json.dumps(report, indent=2) + '\n')
+    (reports / 'training.json').write_text(json.dumps(report, indent=2) + '\n', newline='\n')
+    (run / 'training.json').write_text(json.dumps(report, indent=2) + '\n', newline='\n')
     with torch.inference_mode():
         masks = model(test_x[:12]).sigmoid().numpy()[:, 0] >= 0.65
     montage = []
@@ -148,8 +173,10 @@ def main():
     fig, axes = plt.subplots(1, 2, figsize=(10, 3.5))
     epochs = [row['epoch'] for row in history]
     axes[0].plot(epochs, [row['loss'] for row in history])
-    axes[0].set(title='training loss', xlabel='epoch', ylabel='weighted binary cross entropy')
+    axes[0].set(title='training loss', xlabel='epoch', ylabel='weighted bce + dice')
     axes[1].plot(epochs, [row['mask_iou'] for row in history])
+    axes[1].plot(epochs, [row['dim_validation_iou'] for row in history], label='dim')
+    axes[1].legend()
     axes[1].set(title='held-out validation', xlabel='epoch', ylabel='mask iou', ylim=(0, 1))
     for ax in axes:
         ax.grid(alpha=0.25)
