@@ -1,0 +1,26 @@
+{
+  "case": "missing_blue_box",
+  "backend": "catalog",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": null,
+  "minimum_target_gap_m": null,
+  "travelled_m": 0.0001,
+  "mean_visible_alignment_error": 0.0425,
+  "mean_centroid_difference_vs_hsv_pixels": null,
+  "inference_median_ms": 0.938,
+  "inference_p95_ms": 1.262,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 0,
+  "final_position": [
+    -4.696071057016103e-05,
+    -7.072643493010072e-06,
+    -6.39619957883801e-05
+  ],
+  "max_forward_speed_rad_s": 0.0,
+  "wrong_target_packets": 0,
+  "states": [
+    "lost",
+    "search"
+  ]
+}

@@ -1,5 +1,8 @@
 # target net
 
+this card covers the red-only model. the selectable multi-class model has its own
+[data guide](docs/target_data.md) and [measurements](reports/target_results.md).
+
 ## job
 
 take an image, predict a red target mask, then use its centroid for steering. the

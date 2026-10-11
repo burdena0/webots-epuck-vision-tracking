@@ -1,0 +1,27 @@
+{
+  "case": "select_green_box",
+  "backend": "catalog",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 8.576,
+  "minimum_target_gap_m": 0.0039,
+  "travelled_m": 0.3367,
+  "mean_visible_alignment_error": 0.3993,
+  "mean_centroid_difference_vs_hsv_pixels": 224.685,
+  "inference_median_ms": 1.199,
+  "inference_p95_ms": 1.461,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 983,
+  "final_position": [
+    0.31912284447983147,
+    0.10705080484443179,
+    -6.395701125132616e-05
+  ],
+  "max_forward_speed_rad_s": 2.2,
+  "wrong_target_packets": 0,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}

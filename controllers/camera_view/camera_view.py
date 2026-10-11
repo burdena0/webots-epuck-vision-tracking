@@ -14,9 +14,13 @@ from visionlab.perception import HSVDetector, OriginalDetector
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--backend', choices=['hsv', 'neural', 'original'], default='neural')
+    parser.add_argument('--backend', choices=['hsv', 'neural', 'original', 'catalog'], default='neural')
+    parser.add_argument('--target', default='red_box')
+    parser.add_argument('--target-bundle', type=Path, default=ROOT / 'models/targets')
     parser.add_argument('--no-preview', action='store_true')
     args = parser.parse_args()
+    if args.backend != 'catalog' and args.target != 'red_box':
+        parser.error('named targets need --backend catalog')
     robot = Robot()
     timestep = int(robot.getBasicTimeStep())
     motors = [robot.getDevice(name) for name in ('left wheel motor', 'right wheel motor')]
@@ -24,7 +28,11 @@ def main():
         motor.setPosition(float('inf'))
         motor.setVelocity(0)
     try:
-        if args.backend == 'neural':
+        if args.backend == 'catalog':
+            from visionlab.targets import CatalogDetector
+            bundle = args.target_bundle if args.target_bundle.is_absolute() else ROOT / args.target_bundle
+            detector = CatalogDetector(bundle, args.target)
+        elif args.backend == 'neural':
             from visionlab.neural import NeuralDetector
             detector = NeuralDetector(ROOT / 'models/target_net.pt')
         else:
@@ -37,7 +45,7 @@ def main():
         for sensor in sensors:
             sensor.enable(timestep)
         emitter = robot.getDevice('telemetry')
-        print(f'camera ready. backend={args.backend}. press q to stop', flush=True)
+        print(f'camera ready. backend={args.backend} target={args.target}. press q to stop', flush=True)
         step_index = 0
         while robot.step(timestep) != -1:
             image = camera.getImage()
@@ -57,7 +65,8 @@ def main():
             ref, _ = reference.detect(frame)
             packet = {'time': robot.getTime(), 'state': command.state, 'left': command.left, 'right': command.right,
                       'x': None if detection is None else detection.x, 'reference_x': None if ref is None else ref.x,
-                      'front': max(sensors[i].getValue() for i in (0, 1, 6, 7)), 'inference_ms': inference_ms}
+                      'front': max(sensors[i].getValue() for i in (0, 1, 6, 7)), 'inference_ms': inference_ms,
+                      'target': args.target}
             emitter.send(json.dumps(packet).encode())
             if step_index % 30 == 0:
                 print(f"{command.state}: front={packet['front']:.1f} inference={inference_ms:.2f}ms", flush=True)
@@ -71,7 +80,7 @@ def main():
                 if detection:
                     x, y, w, h = detection.box
                     cv2.rectangle(preview, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                cv2.putText(preview, command.state, (8, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 255, 0), 1)
+                cv2.putText(preview, args.target + ': ' + command.state, (8, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 255, 0), 1)
                 cv2.imshow('camera - q to stop', preview)
                 cv2.imshow('target mask', mask)
                 if cv2.waitKey(1) & 0xff == ord('q'):

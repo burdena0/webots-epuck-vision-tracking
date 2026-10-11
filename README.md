@@ -15,6 +15,8 @@ code, trained weights, learning curves, simulator results and tests.
 - immediate stops on target loss or bad sensors, then a short scan in place
 - front proximity stops with hysteresis so it doesnt chatter at the threshold
 - a separate supervisor that moves the scene and records results
+- a trained red/blue/green target catalog with explicit target selection
+- an image-and-mask dataset loader for training your own named targets
 
 the controller only gets camera frames and proximity readings. supervisor positions
 are used for scoring, never steering. the hsv reference in telemetry is also only
@@ -78,6 +80,19 @@ the simulator runner checks five scenes in three modes. it writes json results a
 camera captures. read `reports/results.md` for the numbers and `MODEL_CARD.md` for
 what the model was trained on. unit tests run in github actions; the checked-in
 webots measurements were run locally.
+
+## select a trained target
+
+open `worlds/target_selection_lab.wbt`. set the robot controllerargs to
+`--backend catalog --target blue_box` to approach blue while ignoring red and green.
+use `red_box` or `green_box` for the other trained classes. the camera preview
+shows the selected target name. if its missing, the robot stops and only scans in
+place. it doesnt pick a different color for you.
+
+the catalog model was trained on 3,000 labeled synthetic images. its held-out
+400-image macro mask iou is 0.9813. read [target data](docs/target_data.md) for the
+training commands, custom image/mask format and limits. selection measurements
+and class-level results are in `reports/target_results.md`.
 
 ## limits
 

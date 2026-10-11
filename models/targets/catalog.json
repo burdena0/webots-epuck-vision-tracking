@@ -1,0 +1,14 @@
+{
+  "classes": [
+    "red_box",
+    "blue_box",
+    "green_box"
+  ],
+  "input_size": [
+    96,
+    72
+  ],
+  "threshold": 0.65,
+  "model_sha256": "c08c3ee0b38818d58564e0ba2f830705197392a0bd1dfeac3ed29007d1f94208",
+  "manifest_sha256": "88969b87e891fa14de62ede164522137a559008d539dfc6b2c8e33304a06250d"
+}

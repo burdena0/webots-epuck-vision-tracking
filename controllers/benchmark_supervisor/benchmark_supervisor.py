@@ -44,13 +44,15 @@ agreement = [abs(p['x'] - p['reference_x']) * 320 for p in packets if p['x'] is 
 latencies = [p['inference_ms'] for p in packets]
 loss_motion = [abs(p['left'] + p['right']) / 2 for p in packets if case == 'occlusion' and 4.15 <= p['time'] < 6.9]
 row = {'case': case, 'backend': config['backend'], 'samples': len(packets), 'duration_sim_seconds': robot.getTime(),
-       'arrival_sim_seconds': arrival_time, 'minimum_target_gap_m': round(minimum_gap, 4), 'travelled_m': round(distance_travelled, 4),
+       'arrival_sim_seconds': arrival_time, 'minimum_target_gap_m': round(minimum_gap, 4) if math.isfinite(minimum_gap) else None, 'travelled_m': round(distance_travelled, 4),
        'mean_visible_alignment_error': round(statistics.mean(errors), 4) if errors else None,
        'mean_centroid_difference_vs_hsv_pixels': round(statistics.mean(agreement), 3) if agreement else None,
        'inference_median_ms': round(statistics.median(latencies), 3) if latencies else None,
        'inference_p95_ms': round(sorted(latencies)[int(0.95 * (len(latencies) - 1))], 3) if latencies else None,
        'max_forward_speed_during_occlusion_rad_s': round(max(loss_motion), 5) if loss_motion else None,
        'blocked_samples': sum(p['state'] == 'blocked' for p in packets), 'final_position': position,
+       'max_forward_speed_rad_s': round(max([abs(p['left'] + p['right']) / 2 for p in packets], default=0), 5),
+       'wrong_target_packets': sum(p.get('target') != config.get('target', 'red_box') for p in packets),
        'states': sorted(set(p['state'] for p in packets))}
 reports = ROOT / 'reports'
 reports.mkdir(exist_ok=True)

@@ -1,0 +1,39 @@
+#VRML_SIM R2025a utf8
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+WorldInfo { basicTimeStep 32 randomSeed 11 }
+Viewpoint { position 1.2 0.8 1.4 orientation -0.4 0.2 0.9 3.2 }
+TexturedBackground { }
+TexturedBackgroundLight { }
+RectangleArena { floorSize 2 2 }
+DEF TARGET Solid {
+  translation 0.42 -0.13 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.8 0.02 0.01 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "target" boundingObject Box { size 0.12 0.12 0.2 }
+}
+DEF OBSTACLE Solid {
+  translation -0.8 -0.8 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.25 0.25 roughness 1 metalness 0 } geometry Box { size 0.04 0.18 0.1 } } ]
+  name "obstacle" boundingObject Box { size 0.04 0.18 0.1 }
+}
+DEF EPUCK E-puck {
+  translation 0 0 0 controller "camera_view"
+  controllerArgs [ "--backend" "catalog" "--target" "red_box"  ]
+  customData "" window ""
+  camera_width 320 camera_height 240
+  turretSlot [ Emitter { name "telemetry" channel 42 } ]
+}
+
+Solid {
+  translation 0.42 0 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.02 0.01 0.8 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "distractor_blue_box" boundingObject Box { size 0.12 0.12 0.2 }
+}
+
+Solid {
+  translation 0.42 0.13 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.01 0.8 0.02 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "distractor_green_box" boundingObject Box { size 0.12 0.12 0.2 }
+}

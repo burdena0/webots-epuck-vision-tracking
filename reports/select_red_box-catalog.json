@@ -1,0 +1,27 @@
+{
+  "case": "select_red_box",
+  "backend": "catalog",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 8.416,
+  "minimum_target_gap_m": 0.0195,
+  "travelled_m": 0.3204,
+  "mean_visible_alignment_error": 0.0053,
+  "mean_centroid_difference_vs_hsv_pixels": 0.158,
+  "inference_median_ms": 1.268,
+  "inference_p95_ms": 1.639,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 988,
+  "final_position": [
+    0.30354593083307824,
+    -0.10224416922028988,
+    -6.394160159453599e-05
+  ],
+  "max_forward_speed_rad_s": 2.19999,
+  "wrong_target_packets": 0,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}
