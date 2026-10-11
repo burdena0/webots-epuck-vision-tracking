@@ -1,30 +1,28 @@
-# webots neural vision + robot control
+# Webots Neural Vision and Robot Control
 
-an e-puck that finds a red box and drives toward it. i started with hsv color
-tracking, then added a small cnn and a better controller. the repo has the training
-code, trained weights, learning curves, simulator results and tests.
+An e-puck robot that finds a target box and drives toward it in Webots. I started with HSV color tracking, then added a small CNN and improved the steering and stopping logic. This repo includes training code, weights, learning curves, simulator results, and tests.
 
-## whats in here
+## What's in here
 
-- a 1,113 parameter pytorch cnn that predicts the target mask from rgb pixels
-- generated training images with exact labels, shadows, clutter and missing targets
-- brightness augmentation, dice loss and a cosine learning-rate schedule
-- separate training, validation and test seeds
-- hsv and original-controller baselines so the comparisons are reproducible
-- proportional steering, smoother wheel speeds and slower approaches
-- immediate stops on target loss or bad sensors, then a short scan in place
-- front proximity stops with hysteresis so it doesnt chatter at the threshold
-- a separate supervisor that moves the scene and records results
-- a trained red/blue/green target catalog with explicit target selection
-- an image-and-mask dataset loader for training your own named targets
+- A 1,113 parameter PyTorch CNN that predicts the target mask from RGB pixels
+- Generated training images with exact labels, shadows, clutter and missing targets
+- Brightness augmentation, dice loss and a cosine learning-rate schedule
+- Separate training, validation and test seeds
+- HSV and original-controller baselines so the comparisons are reproducible
+- Proportional steering, smoother wheel speeds and slower approaches
+- Immediate stops on target loss or bad sensors, then a short scan in place
+- Front proximity stops with hysteresis so it doesn't chatter at the threshold
+- A separate supervisor that moves the scene and records results
+- A trained red/blue/green target catalog with explicit target selection
+- An image-and-mask dataset loader for training your own named targets
 
-the controller only gets camera frames and proximity readings. supervisor positions
-are used for scoring, never steering. the hsv reference in telemetry is also only
-for evaluation. neural mode doesnt silently switch to hsv.
+The controller only gets camera frames and proximity readings. Supervisor positions
+are used for scoring, never steering. The HSV reference in telemetry is also only
+for evaluation. Neural mode doesn't silently switch to HSV.
 
-## setup
+## Setup
 
-use webots r2025a and python 3.12. in this folder:
+Use Webots r2025a and Python 3.12. In this folder:
 
 ```powershell
 python -m venv .venv
@@ -32,43 +30,43 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-set the python command in webots preferences to that venv's python. open
-`worlds/camera_lab.wbt` and run it. neural mode is the default. press q in the camera
-window to stop. the first world load needs internet for the cyberbotics protos.
+Set the Python command in Webots preferences to that venv's Python. Open
+`worlds/camera_lab.wbt` and run it. Neural mode is the default. Press q in the camera
+window to stop. The first world load needs internet for the Cyberbotics protos.
 
-to compare modes, set the robot's controllerargs to `--backend hsv` or
-`--backend original`. the original mode keeps the old steering and stopping rules.
+To compare modes, set the robot's controllerargs to `--backend hsv` or
+`--backend original`. The original mode keeps the old steering and stopping rules.
 
-## train it
+## Train it
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/train_model.py
 ```
 
-this starts from random weights and trains on 4,800 images for 36 epochs. it varies
-brightness from 0.5 to 1.25 each time an image is seen. the best checkpoint is picked
-using the mean iou on standard and dim validation views. the model used by webots
-is `models/target_net.pt`. loss history, checkpoints and settings go in `runs/default`.
-the plots and measurements go in `reports`.
+This starts from random weights and trains on 4,800 images for 36 epochs. It varies
+brightness from 0.5 to 1.25 each time an image is seen. The best checkpoint is picked
+using the mean IoU on standard and dim validation views. The model used by Webots
+is `models/target_net.pt`. Loss history, checkpoints and settings go in `runs/default`.
+The plots and measurements go in `reports`.
 
-for another experiment:
+For another experiment:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/train_model.py --run-name improved-v3
 .\.venv\Scripts\python.exe scripts/compare_models.py
 ```
 
-each training run replaces the active model and report. keep the run folders if
+Each training run replaces the active model and report. Keep the run folders if
 you want to compare experiments. `models/baseline_target_net.pt` keeps the original
-model for comparison. the 320-image legacy test was reused, so its a diagnostic now.
-the final comparison uses new seeds reserved before v3 training. if you tune based
+model for comparison. The 320-image legacy test was reused, so it's now a diagnostic.
+The final comparison uses new seeds reserved before v3 training. If you tune based
 on those results, you need another untouched audit set.
 
-the first longer run improved normal-light masks but regressed in dim light. v3
-adds brightness variation to fix that. both experiment reports are kept, including
-the remaining small blur regression. read `MODEL_CARD.md` for the full comparison.
+The first longer run improved normal-light masks but regressed in dim light. V3
+adds brightness variation to fix that. Both experiment reports are kept, including
+the remaining small blur regression. Read `MODEL_CARD.md` for the full comparison.
 
-## test it
+## Test it
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
@@ -76,30 +74,30 @@ the remaining small blur regression. read `MODEL_CARD.md` for the full compariso
 .\.venv\Scripts\python.exe scripts/summarize_results.py
 ```
 
-the simulator runner checks five scenes in three modes. it writes json results and
-camera captures. read `reports/results.md` for the numbers and `MODEL_CARD.md` for
-what the model was trained on. unit tests run in github actions; the checked-in
-webots measurements were run locally.
+The simulator runner checks five scenes in three modes. It writes JSON results and
+camera captures. Read `reports/results.md` for the numbers and `MODEL_CARD.md` for
+what the model was trained on. Unit tests run in GitHub actions; the checked-in
+Webots measurements were run locally.
 
-## select a trained target
+## Select a trained target
 
-open `worlds/target_selection_lab.wbt`. set the robot controllerargs to
+Open `worlds/target_selection_lab.wbt`. Set the robot controllerargs to
 `--backend catalog --target blue_box` to approach blue while ignoring red and green.
-use `red_box` or `green_box` for the other trained classes. the camera preview
-shows the selected target name. if its missing, the robot stops and only scans in
-place. it doesnt pick a different color for you.
+Use `red_box` or `green_box` for the other trained classes. The camera preview
+shows the selected target name. If it's missing, the robot stops and only scans in
+place. It doesn't pick a different color for you.
 
-the catalog model was trained on 3,000 labeled synthetic images. its held-out
-400-image macro mask iou is 0.9813. read [target data](docs/target_data.md) for the
-training commands, custom image/mask format and limits. selection measurements
+The catalog model was trained on 3,000 labeled synthetic images. Its held-out
+400-image macro mask IoU is 0.9813. Read [target data](docs/target_data.md) for the
+training commands, custom image/mask format and limits. Selection measurements
 and class-level results are in `reports/target_results.md`.
 
-## limits
+## Limits
 
-this is a simulation project. the training set is procedural, and the model learns
-red-box appearance rather than general object recognition. different colors,
+This is a simulation project. The training set is procedural, and the model learns
+red-box appearance rather than general object recognition. Different colors,
 lighting, shapes and multiple similar red objects still need more data and tests.
-blur remains a weakness: v3 scored slightly below the original in that stress check.
-proximity thresholds are raw simulator readings, not distances. blocked means stop;
-this project doesnt plan a route around obstacles. no physical robot results are
-claimed. the world references cyberbotics assets under their own license.
+Blur remains a weakness: v3 scored slightly below the original in that stress check.
+Proximity thresholds are raw simulator readings, not distances. Blocked means stop;
+this project doesn't plan a route around obstacles. No physical robot results are
+claimed. The world references Cyberbotics assets under their own license.

@@ -1,10 +1,10 @@
-# train named targets
+# Train named targets
 
-the catalog model predicts one background class and one mask per named target.
-`--target` picks the mask used for steering. other classes stay distractors. it
-doesnt switch to another class if the selected one disappears.
+The catalog model predicts one background class and one mask per named target.
+`--target` picks the mask used for steering. Other classes stay distractors. It
+doesn't switch to another class if the selected one disappears.
 
-## the included demo
+## The included demo
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/make_target_data.py
@@ -12,33 +12,33 @@ doesnt switch to another class if the selected one disappears.
 .\.venv\Scripts\python.exe scripts/run_target_benchmarks.py --webots "path\to\webots.exe"
 ```
 
-the generator writes 3,000 training images, 320 validation images and 400 test
-images. split seeds are 20261023, 20261024 and 20261025. boxes can overlap, have
-shadows or be missing. their labels come from drawing geometry, not color masks.
-brightness varies from 0.55 to 1.2. raw generated data is ignored by git and can be
-recreated with the command above. use a new `--output` folder to regenerate data.
+The generator writes 3,000 training images, 320 validation images and 400 test
+images. Split seeds are 20261023, 20261024 and 20261025. Boxes can overlap, have
+shadows or be missing. Their labels come from drawing geometry, not color masks.
+Brightness varies from 0.55 to 1.2. Raw generated data is ignored by git and can be
+recreated with the command above. Use a new `--output` folder to regenerate data.
 
-training starts from random weights. the 1,460-parameter cnn uses weighted cross
-entropy, adam and cosine decay for 24 epochs. validation macro foreground iou
-selects the checkpoint; test images are scored once afterward. masks use a fixed
-0.65 probability threshold. reports keep all class scores and missed targets.
+Training starts from random weights. The 1,460-parameter CNN uses weighted cross
+entropy, Adam and cosine decay for 24 epochs. Validation macro foreground IoU
+selects the checkpoint; test images are scored once afterward. Masks use a fixed
+0.65 probability threshold. Reports keep all class scores and missed targets.
 
-open `worlds/target_selection_lab.wbt`. change the e-puck's controllerargs to:
+Open `worlds/target_selection_lab.wbt`. Change the e-puck's controllerargs to:
 
 ```text
 "--backend" "catalog" "--target" "blue_box"
 ```
 
-the included names are `red_box`, `blue_box` and `green_box`. the original red-only
-model is still available with `--backend neural`. catalog mode loads its own
+The included names are `red_box`, `blue_box` and `green_box`. The original red-only
+model is still available with `--backend neural`. Catalog mode loads its own
 trained weights and metadata from `models/targets`.
 
-## your own labeled data
+## Your own labeled data
 
-make a folder with `manifest.json`, rgb images and matching masks. masks are
-single-channel 8-bit pngs with integer class ids: 0 is background, 1 is the first
-name in `classes`, 2 is the second, and so on. a mask needs the same width and
-height as its image. use visible object pixels only. cover different lighting,
+Make a folder with `manifest.json`, RGB images and matching masks. Masks are
+single-channel 8-bit PNGs with integer class IDs: 0 is background, 1 is the first
+name in `classes`, 2 is the second, and so on. A mask needs the same width and
+height as its image. Use visible object pixels only. Cover different lighting,
 positions, backgrounds and negative examples where the target is absent.
 
 ```json
@@ -52,32 +52,32 @@ positions, backgrounds and negative examples where the target is absent.
 }
 ```
 
-this is the format, not a large enough training set. every split needs examples
-of every class. keep separate scenes or recording sessions in separate splits.
-the loader rejects identical decoded images across splits and invalid mask ids;
-it cannot find every near-duplicate or a recording-session leak. image and mask
-paths must stay inside the dataset folder. class names are unique lowercase
+This is the format, not a large enough training set. Every split needs examples
+of every class. Keep separate scenes or recording sessions in separate splits.
+The loader rejects identical decoded images across splits and invalid mask IDs;
+it cannot find every near-duplicate or a recording-session leak. Image and mask
+paths must stay inside the dataset folder. Class names are unique lowercase
 identifiers without spaces.
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/train_targets.py --data "C:\path\to\my_data" --output models/my_targets
 ```
 
-then use these controllerargs:
+Then use these controllerargs:
 
 ```text
 "--backend" "catalog" "--target-bundle" "models/my_targets" "--target" "my_target"
 ```
 
-the bundle contains `target_catalog.pt` and `catalog.json`. keep them together.
-relative bundle paths start from the project root, not the controller folder.
-unknown target names, inconsistent model metadata and failed sensor readings stop
-the controller. custom data needs its own held-out evaluation and simulator runs.
+The bundle contains `target_catalog.pt` and `catalog.json`. Keep them together.
+Relative bundle paths start from the project root, not the controller folder.
+Unknown target names, inconsistent model metadata and failed sensor readings stop
+the controller. Custom data needs its own held-out evaluation and simulator runs.
 
-## scope
+## Scope
 
-the tested demo recognizes colored-box classes. it does not identify a unique
-instance among several boxes of the same class. the largest selected component
-wins. it is not a general object detector, and the small network has limited
-shape context. supporting new objects in the dataset format does not mean those
-objects have been trained or verified. no physical robot results are claimed.
+The tested demo recognizes colored-box classes. It does not identify a unique
+instance among several boxes of the same class. The largest selected component
+wins. It is not a general object detector, and the small network has limited
+shape context. Supporting new objects in the dataset format does not mean those
+objects have been trained or verified. No physical robot results are claimed.
