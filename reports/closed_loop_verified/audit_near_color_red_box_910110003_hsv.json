@@ -1,0 +1,38 @@
+{
+  "case": "near_color",
+  "backend": "hsv",
+  "target": "red_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_near_color_red_box_910110003_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": 23.68,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.019714754211213416,
+  "max_forward_rad_s": 2.1984213020611154,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.8548999903723598,
+  "inference_p95_ms": 1.271100016310811,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "lost",
+    "search",
+    "track"
+  ],
+  "wall_seconds": 7.361143100017216,
+  "world_sha256": "2bd9e01073d386ea9deee3c841ac394ad912991c45b574d36a6adbaae27e333a"
+}

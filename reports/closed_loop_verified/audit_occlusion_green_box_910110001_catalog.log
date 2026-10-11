@@ -1,0 +1,34 @@
+INFO: camera_view: Starting controller: .\.venv\Scripts\python.exe -u camera_view.py --backend catalog --target green_box --no-preview --hsv-settings .\reports\perception_audit\hsv_settings.json
+INFO: audit_supervisor: Starting controller: python.exe -u audit_supervisor.py
+camera ready. backend=catalog target=green_box. press q to stop
+track: front=67.6 inference=23.52ms
+approach: front=71.9 inference=1.40ms
+approach: front=70.9 inference=1.38ms
+approach: front=71.4 inference=1.49ms
+search: front=71.0 inference=3.25ms
+search: front=69.5 inference=4.02ms
+search: front=68.2 inference=1.60ms
+approach: front=74.2 inference=1.58ms
+approach: front=68.6 inference=1.59ms
+approach: front=73.1 inference=1.63ms
+approach: front=69.9 inference=1.65ms
+approach: front=67.1 inference=1.83ms
+blocked: front=136.0 inference=3.05ms
+blocked: front=144.4 inference=2.19ms
+blocked: front=125.5 inference=2.60ms
+blocked: front=138.5 inference=1.52ms
+blocked: front=134.9 inference=1.79ms
+blocked: front=142.4 inference=1.59ms
+blocked: front=138.7 inference=1.66ms
+blocked: front=139.0 inference=1.61ms
+blocked: front=134.1 inference=1.76ms
+blocked: front=136.3 inference=2.58ms
+blocked: front=138.4 inference=1.69ms
+blocked: front=132.4 inference=1.86ms
+blocked: front=137.2 inference=1.48ms
+blocked: front=140.3 inference=1.71ms
+blocked: front=133.4 inference=1.77ms
+INFO: camera_view: Terminating.
+INFO: audit_supervisor: Terminating.
+.\.venv\Lib\site-packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "calibration": {
+    "protocol": "12 S/V candidates on normal+dim calibration only; fixed class hue bands; first candidate breaks ties",
+    "seeds": [
+      810110001,
+      810110002
+    ],
+    "images": 360,
+    "selected": {
+      "saturation": 100,
+      "value": 20
+    },
+    "candidates": [
+      {
+        "saturation": 50,
+        "value": 20,
+        "macro_iou": 0.8717300874432888
+      },
+      {
+        "saturation": 50,
+        "value": 40,
+        "macro_iou": 0.7367325294110213
+      },
+      {
+        "saturation": 50,
+        "value": 60,
+        "macro_iou": 0.5692496462399196
+      },
+      {
+        "saturation": 50,
+        "value": 80,
+        "macro_iou": 0.443532667340136
+      },
+      {
+        "saturation": 75,
+        "value": 20,
+        "macro_iou": 0.9650734267646159
+      },
+      {
+        "saturation": 75,
+        "value": 40,
+        "macro_iou": 0.7813382598217643
+      },
+      {
+        "saturation": 75,
+        "value": 60,
+        "macro_iou": 0.5858540901097947
+      },
+      {
+        "saturation": 75,
+        "value": 80,
+        "macro_iou": 0.447045625054636
+      },
+      {
+        "saturation": 100,
+        "value": 20,
+        "macro_iou": 0.9795888906733817
+      },
+      {
+        "saturation": 100,
+        "value": 40,
+        "macro_iou": 0.7877103240492574
+      },
+      {
+        "saturation": 100,
+        "value": 60,
+        "macro_iou": 0.587343130407011
+      },
+      {
+        "saturation": 100,
+        "value": 80,
+        "macro_iou": 0.44713943913726223
+      }
+    ]
+  },
+  "audit_seeds": {
+    "standard": 810120000,
+    "dim": 810121000,
+    "blur": 810122000,
+    "occlusion": 810123000,
+    "near_color": 810124000,
+    "missing": 810125000
+  },
+  "images_per_case": 600,
+  "cnn_threshold": 0.65,
+  "torch_threads": 2,
+  "model_sha256": "c08c3ee0b38818d58564e0ba2f830705197392a0bd1dfeac3ed29007d1f94208",
+  "catalog_sha256": "600ec5c495463986c03515150dc6af017a1a6e940e65667f0b44ae9bf6cf20b6",
+  "training_report_sha256": "7e64dfdf9f1859458c3c0a47dbf95a1a53a75f800f701540b253125ccf5a8ef5",
+  "source_sha256": {
+    "scripts/evaluate_perception.py": "adebdabff7a5493c04532ff5356cce1be7892993fd214a194572894601e6a626",
+    "scripts/make_target_data.py": "f16c676b4f2da763a5b39ea4259708f2df2973242e47a411a3c4022bb3971a8a",
+    "visionlab/perception.py": "5f7cf935024d7b6590bf4292e1726b774621a1a21241cf25ec098faec15a534f",
+    "visionlab/targets.py": "057718090afbb8d8e925389ae9bddb8bbfe2a3dd6ed9afb4fe594d08c6b5619a"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+    "torch": "2.14.1+cpu",
+    "opencv": "5.0.0",
+    "numpy": "2.5.4"
+  }
+}

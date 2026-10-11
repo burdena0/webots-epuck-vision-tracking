@@ -1,0 +1,35 @@
+{
+  "case": "missing",
+  "backend": "hsv",
+  "target": "green_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_missing_green_box_910110003_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": null,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": null,
+  "max_forward_rad_s": 0,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.4422999918460846,
+  "inference_p95_ms": 0.6231000006664544,
+  "samples": 781,
+  "states": [
+    "lost",
+    "search"
+  ],
+  "wall_seconds": 4.987399599980563,
+  "world_sha256": "1951b72e345515397be42b3eb54cfdfceb46d6239e9f49bba6aac53678398c54"
+}

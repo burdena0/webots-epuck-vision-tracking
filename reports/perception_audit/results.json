@@ -1,0 +1,584 @@
+{
+  "protocol": {
+    "version": 1,
+    "calibration": {
+      "protocol": "12 S/V candidates on normal+dim calibration only; fixed class hue bands; first candidate breaks ties",
+      "seeds": [
+        810110001,
+        810110002
+      ],
+      "images": 360,
+      "selected": {
+        "saturation": 100,
+        "value": 20
+      },
+      "candidates": [
+        {
+          "saturation": 50,
+          "value": 20,
+          "macro_iou": 0.8717300874432888
+        },
+        {
+          "saturation": 50,
+          "value": 40,
+          "macro_iou": 0.7367325294110213
+        },
+        {
+          "saturation": 50,
+          "value": 60,
+          "macro_iou": 0.5692496462399196
+        },
+        {
+          "saturation": 50,
+          "value": 80,
+          "macro_iou": 0.443532667340136
+        },
+        {
+          "saturation": 75,
+          "value": 20,
+          "macro_iou": 0.9650734267646159
+        },
+        {
+          "saturation": 75,
+          "value": 40,
+          "macro_iou": 0.7813382598217643
+        },
+        {
+          "saturation": 75,
+          "value": 60,
+          "macro_iou": 0.5858540901097947
+        },
+        {
+          "saturation": 75,
+          "value": 80,
+          "macro_iou": 0.447045625054636
+        },
+        {
+          "saturation": 100,
+          "value": 20,
+          "macro_iou": 0.9795888906733817
+        },
+        {
+          "saturation": 100,
+          "value": 40,
+          "macro_iou": 0.7877103240492574
+        },
+        {
+          "saturation": 100,
+          "value": 60,
+          "macro_iou": 0.587343130407011
+        },
+        {
+          "saturation": 100,
+          "value": 80,
+          "macro_iou": 0.44713943913726223
+        }
+      ]
+    },
+    "audit_seeds": {
+      "standard": 810120000,
+      "dim": 810121000,
+      "blur": 810122000,
+      "occlusion": 810123000,
+      "near_color": 810124000,
+      "missing": 810125000
+    },
+    "images_per_case": 600,
+    "cnn_threshold": 0.65,
+    "torch_threads": 2,
+    "model_sha256": "c08c3ee0b38818d58564e0ba2f830705197392a0bd1dfeac3ed29007d1f94208",
+    "catalog_sha256": "600ec5c495463986c03515150dc6af017a1a6e940e65667f0b44ae9bf6cf20b6",
+    "training_report_sha256": "7e64dfdf9f1859458c3c0a47dbf95a1a53a75f800f701540b253125ccf5a8ef5",
+    "source_sha256": {
+      "scripts/evaluate_perception.py": "adebdabff7a5493c04532ff5356cce1be7892993fd214a194572894601e6a626",
+      "scripts/make_target_data.py": "f16c676b4f2da763a5b39ea4259708f2df2973242e47a411a3c4022bb3971a8a",
+      "visionlab/perception.py": "5f7cf935024d7b6590bf4292e1726b774621a1a21241cf25ec098faec15a534f",
+      "visionlab/targets.py": "057718090afbb8d8e925389ae9bddb8bbfe2a3dd6ed9afb4fe594d08c6b5619a"
+    },
+    "environment": {
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "processor": "AMD64 Family 25 Model 33 Stepping 2, AuthenticAMD",
+      "torch": "2.14.1+cpu",
+      "opencv": "5.0.0",
+      "numpy": "2.5.4"
+    }
+  },
+  "results": [
+    {
+      "case": "standard",
+      "seed": 810120000,
+      "images": 600,
+      "dataset_sha256": "109f141c59fa591b0bcdf40a30871f66302313116c079400d1a84b7413c1c8ba",
+      "cnn": {
+        "macro_iou": 0.9808155612230136,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9850105148008789,
+            "positive_images": 462,
+            "negative_images": 138,
+            "detection_misses": 22,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.04531180476073935
+          },
+          "blue_box": {
+            "mask_iou": 0.9805259455657162,
+            "positive_images": 431,
+            "negative_images": 169,
+            "detection_misses": 24,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.04318805327306903
+          },
+          "green_box": {
+            "mask_iou": 0.9769102233024457,
+            "positive_images": 432,
+            "negative_images": 168,
+            "detection_misses": 19,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.06893889763113241
+          }
+        },
+        "latency_ms": {
+          "median": 1.26695,
+          "p95": 2.5181499999999994,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.9975808502583866,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9990511073577135,
+            "positive_images": 462,
+            "negative_images": 138,
+            "detection_misses": 22,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "blue_box": {
+            "mask_iou": 0.9974520138366015,
+            "positive_images": 431,
+            "negative_images": 169,
+            "detection_misses": 25,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "green_box": {
+            "mask_iou": 0.9962394295808449,
+            "positive_images": 432,
+            "negative_images": 168,
+            "detection_misses": 20,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          }
+        },
+        "latency_ms": {
+          "median": 0.14255,
+          "p95": 0.28295499999999996,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": {
+        "low": -0.01840189735158463,
+        "high": -0.015323196266438924,
+        "resamples": 1000,
+        "unit": "paired synthetic scene, retaining all three classes"
+      }
+    },
+    {
+      "case": "dim",
+      "seed": 810121000,
+      "images": 600,
+      "dataset_sha256": "00632996b2295d41a86ef0219a0564767a640de96cf96e87f800578f5a204e16",
+      "cnn": {
+        "macro_iou": 0.9716537057088012,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9737999462302865,
+            "positive_images": 428,
+            "negative_images": 172,
+            "detection_misses": 11,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.06923714799487914
+          },
+          "blue_box": {
+            "mask_iou": 0.9712165711904001,
+            "positive_images": 457,
+            "negative_images": 143,
+            "detection_misses": 16,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.060241407870302084
+          },
+          "green_box": {
+            "mask_iou": 0.9699445997057168,
+            "positive_images": 435,
+            "negative_images": 165,
+            "detection_misses": 17,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0946115900715833
+          }
+        },
+        "latency_ms": {
+          "median": 1.2946,
+          "p95": 2.8723349999999996,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.9653504136658323,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9637946369240521,
+            "positive_images": 428,
+            "negative_images": 172,
+            "detection_misses": 10,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.26622660670235193
+          },
+          "blue_box": {
+            "mask_iou": 0.964077496628857,
+            "positive_images": 457,
+            "negative_images": 143,
+            "detection_misses": 18,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.2506487508141941
+          },
+          "green_box": {
+            "mask_iou": 0.968179107444588,
+            "positive_images": 435,
+            "negative_images": 165,
+            "detection_misses": 21,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.1903906022354394
+          }
+        },
+        "latency_ms": {
+          "median": 0.1412,
+          "p95": 0.26031,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": {
+        "low": -0.001143673950401136,
+        "high": 0.0137003124275359,
+        "resamples": 1000,
+        "unit": "paired synthetic scene, retaining all three classes"
+      }
+    },
+    {
+      "case": "blur",
+      "seed": 810122000,
+      "images": 600,
+      "dataset_sha256": "9d6e74916dfddaf283dbae34a9d0b4d96376c60ebbe00fea23c7b00a6a8fe31c",
+      "cnn": {
+        "macro_iou": 0.9338433957893889,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9327619929511589,
+            "positive_images": 461,
+            "negative_images": 139,
+            "detection_misses": 18,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.1614121891580071
+          },
+          "blue_box": {
+            "mask_iou": 0.9306992118480872,
+            "positive_images": 446,
+            "negative_images": 154,
+            "detection_misses": 25,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.16492705904120045
+          },
+          "green_box": {
+            "mask_iou": 0.9380689825689208,
+            "positive_images": 431,
+            "negative_images": 169,
+            "detection_misses": 18,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.14287860543602846
+          }
+        },
+        "latency_ms": {
+          "median": 1.346,
+          "p95": 4.205664999999997,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.9133521362225357,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9099772897965023,
+            "positive_images": 461,
+            "negative_images": 139,
+            "detection_misses": 13,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.2706534952568039
+          },
+          "blue_box": {
+            "mask_iou": 0.9146599326913651,
+            "positive_images": 446,
+            "negative_images": 154,
+            "detection_misses": 19,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.2515710556403134
+          },
+          "green_box": {
+            "mask_iou": 0.91541918617974,
+            "positive_images": 431,
+            "negative_images": 169,
+            "detection_misses": 17,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.2342529360865831
+          }
+        },
+        "latency_ms": {
+          "median": 0.14605,
+          "p95": 0.32871,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": {
+        "low": 0.01596956593944076,
+        "high": 0.02535116359597917,
+        "resamples": 1000,
+        "unit": "paired synthetic scene, retaining all three classes"
+      }
+    },
+    {
+      "case": "occlusion",
+      "seed": 810123000,
+      "images": 600,
+      "dataset_sha256": "c802d91fa2e536257a6678945ea80212c1c90336468f8547dc566754526ef7f4",
+      "cnn": {
+        "macro_iou": 0.9744909818613688,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9777661363027217,
+            "positive_images": 461,
+            "negative_images": 139,
+            "detection_misses": 39,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.047960306996637336
+          },
+          "blue_box": {
+            "mask_iou": 0.976915360424398,
+            "positive_images": 443,
+            "negative_images": 157,
+            "detection_misses": 50,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.04265465514421631
+          },
+          "green_box": {
+            "mask_iou": 0.9687914488569869,
+            "positive_images": 449,
+            "negative_images": 151,
+            "detection_misses": 38,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.06844427989627604
+          }
+        },
+        "latency_ms": {
+          "median": 1.3317,
+          "p95": 3.057849999999999,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.9970909080200884,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9988611179512435,
+            "positive_images": 461,
+            "negative_images": 139,
+            "detection_misses": 42,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "blue_box": {
+            "mask_iou": 0.9972921391481082,
+            "positive_images": 443,
+            "negative_images": 157,
+            "detection_misses": 52,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "green_box": {
+            "mask_iou": 0.9951194669609132,
+            "positive_images": 449,
+            "negative_images": 151,
+            "detection_misses": 38,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          }
+        },
+        "latency_ms": {
+          "median": 0.1476,
+          "p95": 0.30505999999999983,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": {
+        "low": -0.024558005188484437,
+        "high": -0.020669387483053827,
+        "resamples": 1000,
+        "unit": "paired synthetic scene, retaining all three classes"
+      }
+    },
+    {
+      "case": "near_color",
+      "seed": 810124000,
+      "images": 600,
+      "dataset_sha256": "f0b72c75cf04ae27aab9498d03b7688af96cbfaf6272c963cd79c9fac7e268bc",
+      "cnn": {
+        "macro_iou": 0.603005696482965,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.4082488878997934,
+            "positive_images": 450,
+            "negative_images": 150,
+            "detection_misses": 7,
+            "false_positive_detections": 106,
+            "centroid_mae_pixels": 12.144792731593894
+          },
+          "blue_box": {
+            "mask_iou": 0.4405953141874766,
+            "positive_images": 445,
+            "negative_images": 155,
+            "detection_misses": 9,
+            "false_positive_detections": 113,
+            "centroid_mae_pixels": 12.092849268178137
+          },
+          "green_box": {
+            "mask_iou": 0.9601728873616248,
+            "positive_images": 445,
+            "negative_images": 155,
+            "detection_misses": 21,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.10976206893348352
+          }
+        },
+        "latency_ms": {
+          "median": 1.1959,
+          "p95": 2.0026699999999997,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.9971278487198368,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.9986619388506055,
+            "positive_images": 450,
+            "negative_images": 150,
+            "detection_misses": 21,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "blue_box": {
+            "mask_iou": 0.9974026933208597,
+            "positive_images": 445,
+            "negative_images": 155,
+            "detection_misses": 31,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          },
+          "green_box": {
+            "mask_iou": 0.9953189139880452,
+            "positive_images": 445,
+            "negative_images": 155,
+            "detection_misses": 21,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": 0.0
+          }
+        },
+        "latency_ms": {
+          "median": 0.13495000000000001,
+          "p95": 0.23,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": {
+        "low": -0.4043669926943046,
+        "high": -0.3842045152861523,
+        "resamples": 1000,
+        "unit": "paired synthetic scene, retaining all three classes"
+      }
+    },
+    {
+      "case": "missing",
+      "seed": 810125000,
+      "images": 600,
+      "dataset_sha256": "0250ce67c03a6e4479d229983a2788fe3fe09ee30002400d7bcaed6609fff505",
+      "cnn": {
+        "macro_iou": null,
+        "classes": {
+          "red_box": {
+            "mask_iou": null,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          },
+          "blue_box": {
+            "mask_iou": null,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          },
+          "green_box": {
+            "mask_iou": null,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          }
+        },
+        "latency_ms": {
+          "median": 1.13755,
+          "p95": 2.014665,
+          "samples": 1800
+        }
+      },
+      "hsv": {
+        "macro_iou": 0.0,
+        "classes": {
+          "red_box": {
+            "mask_iou": 0.0,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          },
+          "blue_box": {
+            "mask_iou": 0.0,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          },
+          "green_box": {
+            "mask_iou": 0.0,
+            "positive_images": 0,
+            "negative_images": 600,
+            "detection_misses": 0,
+            "false_positive_detections": 0,
+            "centroid_mae_pixels": null
+          }
+        },
+        "latency_ms": {
+          "median": 0.1198,
+          "p95": 0.20010499999999992,
+          "samples": 1800
+        }
+      },
+      "cnn_minus_hsv_iou_95pct_bootstrap": null
+    }
+  ]
+}

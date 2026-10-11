@@ -1,0 +1,36 @@
+{
+  "case": "same_color",
+  "backend": "catalog",
+  "target": "blue_box",
+  "seed": 910110002,
+  "duration": 25,
+  "trial_id": "audit_same_color_blue_box_910110002_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.40388595536552313,
+    -0.023158351427060117
+  ],
+  "initial_robot_heading": -0.028346607121140968,
+  "success": true,
+  "arrival_sim_seconds": 7.232,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.002128405922963851,
+  "max_forward_rad_s": 2.199999996916483,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.7914000200107694,
+  "inference_p95_ms": 4.261199996108189,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 11.727337499993155,
+  "world_sha256": "6e010af288468215ffd83540e4c5f55a20968cf56911cbf6ec3efa5d78fac3c8"
+}

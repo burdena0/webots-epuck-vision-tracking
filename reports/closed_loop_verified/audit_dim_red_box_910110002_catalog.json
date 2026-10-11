@@ -1,0 +1,36 @@
+{
+  "case": "dim",
+  "backend": "catalog",
+  "target": "red_box",
+  "seed": 910110002,
+  "duration": 25,
+  "trial_id": "audit_dim_red_box_910110002_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.40388595536552313,
+    -0.023158351427060117
+  ],
+  "initial_robot_heading": -0.028346607121140968,
+  "success": true,
+  "arrival_sim_seconds": 6.88,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.0191319083600374,
+  "max_forward_rad_s": 2.1996687145160565,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.1500999971758574,
+  "inference_p95_ms": 1.3244999863673002,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 7.113410799996927,
+  "world_sha256": "a67a8e03ae525c9920baafefe0a86d6b2e9bdc9890ec2b71a6fb11ff09448f6a"
+}

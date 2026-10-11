@@ -1,0 +1,2383 @@
+{
+  "protocol": "Post-audit conservative review: require selected target to be at least 1 mm nearer than either distractor throughout the 0.5-second stop; original frozen scores remain preserved.",
+  "scope": "Approximate planar circle/box distances from recorded robot positions and hash-verified world geometry; no controller or detector changes.",
+  "algorithm_sha256": "1fba064b8062988b319b93317957efbff889333ee9517452db762685b096aa0b",
+  "trials": [
+    {
+      "trial_id": "audit_standard_red_box_910110001_catalog",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.936,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "e5b291eb90f7d9929595930c36903a9257aba29916b707b80aa3c30e8da46afb"
+    },
+    {
+      "trial_id": "audit_standard_red_box_910110001_hsv",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.872,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "9fc41aeb41f1bb933fb14ac8b0fd9d49b5ca732dc12665068e29472154860bf5"
+    },
+    {
+      "trial_id": "audit_standard_red_box_910110002_hsv",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "604572ddbfc5ef6959e29848e64b3e2d46fde11ddd699b439c6d013be1040344"
+    },
+    {
+      "trial_id": "audit_standard_red_box_910110002_catalog",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "36f66744790adc22e1db4eea68d12469adaf3c4872f1cc89d7c5aac3bfc5f78d"
+    },
+    {
+      "trial_id": "audit_standard_red_box_910110003_catalog",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.48,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "55090fbe3a77e236be4b6a457f7513e863d86a7617618803f43e54e5e4b51717"
+    },
+    {
+      "trial_id": "audit_standard_red_box_910110003_hsv",
+      "case": "standard",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.384,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "4e8c0761568808ca0227948012dd024b006830df8e6b1d87f5414eb627096a04"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110001_catalog",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "8f4d216382659a8d43bcf14273bd2c0a0fd80232d53382d5c2fdb4192989cf3f"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110001_hsv",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.936,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a1201e3cbb967bf043269a5e6c2990fc057e9a560b270aa3328a0c3c57877d45"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110002_hsv",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c1aa858d8d157d3ae715ee944a7a9c4287803f06cdacd9a2ac891fbf6023d774"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110002_catalog",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "d8962ab4c817276377cf15cf0dfc717f10d8bf1473435b6d129a0a32e16dda04"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110003_catalog",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "fa872b0b0beaad79abc38681b23573a31166626a5cff20e04a6705665fb54e28"
+    },
+    {
+      "trial_id": "audit_standard_blue_box_910110003_hsv",
+      "case": "standard",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.576,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "62608fb777b6766b3a3ad459c202243995b70e2f9d0a4e785c189a5ba9e591fb"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110001_catalog",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "286999d4406a1d6b933d8156c02bbc035945ff37d53ab5b6d4c6e7369253862a"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110001_hsv",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "6a4edbee2b57361d30511bfafdc3c00592c2d4f8eef14e162ce917f9bf99bef4"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110002_hsv",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "8cb2bdfec5a6cdab01eac504ac2ab8415fc965fd0bcd4154cb9320018275298c"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110002_catalog",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "564575a46f0440ec82806f7ea6d260592b5f6e3a91640402625d4610343cef97"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110003_catalog",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "e5fd0f76cad8e44a6e863247c483ac5ea176bac162e20365b9e1d75c32040108"
+    },
+    {
+      "trial_id": "audit_standard_green_box_910110003_hsv",
+      "case": "standard",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "8bd1dcb36035fbaa6b2c99aed0f8b8073f7491afab5372ff341f5bcdce57aed0"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110001_catalog",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.936,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "72d0a684cd53298b4fa1b821aee14a518286806b190b2f218b2ccc17b908b5e9"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110001_hsv",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.936,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c31780d41ebd5a2cfcdf7f40823f23e23bc3c9a70da9a87408299ba2fa84603f"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110002_hsv",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "e0212b193d3ff2b80c4160a09c1da065ca99d876ef6b3b273d68a394de381802"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110002_catalog",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a67a8e03ae525c9920baafefe0a86d6b2e9bdc9890ec2b71a6fb11ff09448f6a"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110003_catalog",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.448,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a69377174716b6d5ec4565257a06f5826cfee2929899f21ebdba1659275d7777"
+    },
+    {
+      "trial_id": "audit_dim_red_box_910110003_hsv",
+      "case": "dim",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.48,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "b5583c38ea81e41b940749e6a62254558f99ba5010427b24c8775e9279a22bf1"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110001_catalog",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.968,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c20651c871de8227328cd8ed1f358f6ba1e323f40671ff1d888d749642c61cb2"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110001_hsv",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.936,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3d57b4cf3695d61b1c3aa1949f847cc60a9d918f8193bb1addc83e613793ffc7"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110002_hsv",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "aedaa445930b781a99fff9611dc7aae27d4b22c6e82a085a88fecf39366a8017"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110002_catalog",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "02db670b93c8b867c3219727f6a069d687ce7500e8391d020513729699edc14f"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110003_catalog",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "085e1947e5d882f3b207889712903316c6ab5d0ab6d85950eb5a6eee7ae7201e"
+    },
+    {
+      "trial_id": "audit_dim_blue_box_910110003_hsv",
+      "case": "dim",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.576,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3f1a90955701d3d412ce851d1100d1967bfb328d175e411c32184694434ab07b"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110001_catalog",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.032,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "ef8b2616e5b19bb22c11508b6d1734519d69b29fe8e53e868a50fd106637101b"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110001_hsv",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "75ba8cae45ad8f76f8d49ea254098e18d8b5e21fc7dfdada199594728341c290"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110002_hsv",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "93b416641b1a8c50328c95e8099204581901a9e6100efc07a7ac430760d67c61"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110002_catalog",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "b621b0535d331cde901f6c052b822bee655cf9563cd4bb4a43d6df9cc1772a77"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110003_catalog",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.64,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3359ed78205fed815758d9e7c55b5ea0e4da977b9ab6277d5bbba10655f63d0e"
+    },
+    {
+      "trial_id": "audit_dim_green_box_910110003_hsv",
+      "case": "dim",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c9af658b9e985b73544295f2d2ddf457aa642792f3ec7a86dcc9b3b105762d75"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110001_catalog",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.040000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3ac007c4dc976035d9cdd4397afc82dc486271b7332fb4a83874d501ea5b2e3c"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110001_hsv",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.040000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "36582d9578904ec80f7a5d9cab8e09f72b1307576731c14d6e5f4774581cea82"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110002_hsv",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.336,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "f4cc88b43768ce9dd508e942abf2deca4d962e1053c2e8f15015963f7967a2e1"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110002_catalog",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.336,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "10d6f185aab4f777fe1e540735ecceb8a65f55cb654d7913af4cf3d81c03ab43"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110003_catalog",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.744,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "5c0aba0bb97688edb8b0f4acdd2ef7e9a0f6dfe537831938f58eeef61413f977"
+    },
+    {
+      "trial_id": "audit_occlusion_red_box_910110003_hsv",
+      "case": "occlusion",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.744,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "db44a5db6dfdc02f8f9d28b4c48f2aee71c3d66d95224efa6ad53289d4cdd915"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110001_catalog",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.200000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "041e1a49c37cdd526757318ceeb72acee9f389dc1459a48eb2e8ddbe24857915"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110001_hsv",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.200000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "0e3808ca3b63fbe8ca5af650e556e9583fd04a55e3bf27f6c56eaf1726a0a36e"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110002_hsv",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.464,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "9f1a03263c8d0c00f1a16e2f3897a584d95deec8428f8c5ce051b2af7bef8ea1"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110002_catalog",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.432,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "575a90b264db35d9502adb279179121556cd720bd9fd88f501e989f8490ed820"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110003_catalog",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.776,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "076c69f8c14ef5947e788a68e129131640edb6ddde175afb85a38288ea9f73b2"
+    },
+    {
+      "trial_id": "audit_occlusion_blue_box_910110003_hsv",
+      "case": "occlusion",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.904,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "1bc8b08208f3fa80c778c40d760c3fb724dda1d677429d370fc1c583760a4045"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110001_catalog",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.200000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "553f02f31a12212b763005cc7f9b64c377b179c7b02eec2a53b6b707ac5efd6b"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110001_hsv",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.200000000000001,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "5c74b86912d707e11f7038e192b2e8afef5cb5b51df4843cb058befda453227c"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110002_hsv",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.432,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "f72b1b2e3152aee59d548a87ff74c9f40fc80eb846505b741a695a6f4c6c1904"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110002_catalog",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 10.432,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "f10b54104db97694016a4b7c7a07332566dc99a80fdafac4171eac316f01b0ef"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110003_catalog",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.776,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "592c809f458bb6351f37a65fb434e11c158c0f0b3c2a307170f5481dafae595c"
+    },
+    {
+      "trial_id": "audit_occlusion_green_box_910110003_hsv",
+      "case": "occlusion",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 11.776,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "40ba8d6ec7a7a8d56042ccd2db158ff2fadaa04d4648776fba0a61103af2f645"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110001_catalog",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.16,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3ffff7ab17fa804489d0a43ca63c0dd5b55a3793d162aa7fe431a514dec16810"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110001_hsv",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 19.136,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "9dbe39ac51cfaea2d4992978c3a9989605de7f2a452e58d94b1b5b12c7419440"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110002_hsv",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "349e202dc02d970ea1b519681385bbb6eea9a43b323b9dd0b017e86a36b8a4c8"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110002_catalog",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "18856c1c9837ca9ae2d2967026588a839104b8d284b687310bceff233c225445"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110003_catalog",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 9.312,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a804e1fff408136e826b0c130e5056e16f082a0d7edacd735572de41511edea0"
+    },
+    {
+      "trial_id": "audit_near_color_red_box_910110003_hsv",
+      "case": "near_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 23.68,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "2bd9e01073d386ea9deee3c841ac394ad912991c45b574d36a6adbaae27e333a"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110001_catalog",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.032,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c794ce2d87c6c5a0d0b5ec42658af218079671dbf5ac071a5b228e962850b589"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110001_hsv",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.448,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "205bfcaf2be3ae22dbca43cec14d99d8ee451d7a168697122bcc7ce63b6fec9f"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110002_hsv",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.872,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "38576bbbf65a896bca60e20016887fd517be2fbd90830326ef67a89af5e8c00c"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110002_catalog",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "5b4391376691eef073c05935aed38e006d73940236e1922b74c3472309b00d2d"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110003_catalog",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.64,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "ff8e0eac1be64a789dbd7b91b8df020b5c64af984c14c073779e22fa0cbfd6c5"
+    },
+    {
+      "trial_id": "audit_near_color_blue_box_910110003_hsv",
+      "case": "near_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 9.728,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "ee725ef89874c5cdd1dea3274096f1e05fb9b2b19a044963e1d915954ea07eca"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110001_catalog",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c30f2d35fb49aa613f2a010240a59cdf78ecfaff24e9b37a3b6208df14056a10"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110001_hsv",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.0,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "323dd2f7abca3852d7d1748efe1586ee38193ebc1aee4b4bcd82280d05f7767c"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110002_hsv",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "4cedc2471c5bc5782a57a99c90b1c0fcedf70e67dd3cab78ab0160409e38a427"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110002_catalog",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3c0ae42e1b5c5ee645d1c84e5f75e4113f0fb6b04bf34e5ba522b1e180d8916b"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110003_catalog",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "2b78b71a62981476e51549bb1f13e8b0dbfb94875b328c9ea2f36dd95585d09e"
+    },
+    {
+      "trial_id": "audit_near_color_green_box_910110003_hsv",
+      "case": "near_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "f5433b5e99ec956177565be65ab8b2a2cba0721eb7cb3dcb92d9624455ac1d8a"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110001_catalog",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "2090dfc77608b4c0809254653138d1f9dea4ed821d6bf4ee449b8f30aa509d2f"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110001_hsv",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "1dd99a0697cbfc98b10c4726e6e68fb2a8fa655c80d222cacbacfedce2ef46eb"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110002_hsv",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "dc77fa7a4f88bd8373dee130264d3008d402d979ebd965d43753ffd5a4930c72"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110002_catalog",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a0b6bb9ee454ea81059ab866343c58cea296c0960c545e5d000618c2d2699346"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110003_catalog",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "68c3aee5e1b6990770238b888f9cae6b4fe2ea6981c555e4bba3a13a27a8194a"
+    },
+    {
+      "trial_id": "audit_missing_red_box_910110003_hsv",
+      "case": "missing",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "ca53b9648faa48c105626e7e0426a7913e02554efd9db9e1f39a462c106cd3b2"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110001_catalog",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "45bf06a160afc33038f1f3ef139255189925afa6df6b5dae63534e6ef63c85be"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110001_hsv",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a0dbe903ad380ae5bf41941aa1ad6baa6f47c6846d5aee8468cec956254e3687"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110002_hsv",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "f30dfaca9bbcb27f494e7668571e9ec48f7fe6fa28a734f3458e41bd48757d3d"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110002_catalog",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c9914044c545b8d9bbca8a002b1aac23edb93ba1d4c267c8db0025b990aea665"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110003_catalog",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "5296c65ef6a3f4b7016178456e36cec3e9718f5a6c441a06db99336edc5356d9"
+    },
+    {
+      "trial_id": "audit_missing_blue_box_910110003_hsv",
+      "case": "missing",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "01958028496127f963a2960811e8109e9bab259a237f0f41958891eee2eb38fa"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110001_catalog",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "7cf20d1909038a3b6987cfc0ea7c1b906c1d709fd97a544e1074893ce0eac65f"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110001_hsv",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.42353776055346876,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "1b776b3eaa7e2b8b89eeae9efff25582f4a8df31cc35b62f201352fc8b81bd22"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110002_hsv",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "7c74a6e9b59ebdac3510fb3318afdfcfc0439263f50f528f46f3bca1ad034446"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110002_catalog",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.40388595536552313,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "4cce60830e5ba06c1751cd29eae6833beb3e698fdf89e469378e6cceee4b00ba"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110003_catalog",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a9fe527d2e312aa21c6d6579052bf7bc0816ce9719a98fa0d0e442d1afa918d1"
+    },
+    {
+      "trial_id": "audit_missing_green_box_910110003_hsv",
+      "case": "missing",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.45540757911854046,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "1951b72e345515397be42b3eb54cfdfceb46d6239e9f49bba6aac53678398c54"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110001_catalog",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3235e3d1529200ab06d935d88ca22947209f89d0c3aa8eef2817dc9080c430ba"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110001_hsv",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "a5c1c773b23ab2c89dc5ecc0fcfe29d263e6bcc305a4047340deb918dbff54f8"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110002_hsv",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.5520000000000005,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "28e8d8410719d5803d4619734acf7590704b73b8d5541f905e92660155ecf840"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110002_catalog",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 6.88,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "1deebcf2ef1a88d4d6a9e523a7a702cee3d01be5dbbb0ba6d08e81569564dca5"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110003_catalog",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.48,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "52e7947ce3bf34513221ed706ccbdd26a9bfa84931448642ba277e9d055f9777"
+    },
+    {
+      "trial_id": "audit_same_color_red_box_910110003_hsv",
+      "case": "same_color",
+      "target": "red_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "9be6c81f306e42ed78283ffb59d660ee66a6f29710869aeb1534a5f9a0c52885"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110001_catalog",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "4d7e63c960ab4c327c9a4b44ce5f48d2473299196c177af8a3a1cf20f7d6a894"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110001_hsv",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "597bc24a43d298ec72760455cf6da4a644e4fbe1b033318ff53230ef40442fc6"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110002_hsv",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "c764150d230b404d76a75eefc29d07d22adc1224d15bb8f609f8e226cec3a8ca"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110002_catalog",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "6e010af288468215ffd83540e4c5f55a20968cf56911cbf6ec3efa5d78fac3c8"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110003_catalog",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3b881d0656f9442739e044b588fe4b5d736598b6598fee588e94c373ebee06aa"
+    },
+    {
+      "trial_id": "audit_same_color_blue_box_910110003_hsv",
+      "case": "same_color",
+      "target": "blue_box",
+      "backend": "hsv",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "6665e82cac28fade9044d08ef28ec9f6512d583eef8abf11db4d4b55ba5dea5f"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110001_catalog",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": false,
+      "conservative_success": false,
+      "conservative_arrival_sim_seconds": null,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "40a0a65d2c95966232c00c0f0af18446eb3a9b0bad6164476369b5c7c1c9a69b"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110001_hsv",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.256,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.42353776055346876,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "3f34b50523bc62aacf904152821437f7faff1e0c44b0bd92bf02eef10b54318b"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110002_hsv",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "48b07f703ff4680cc12e23a83c23075d71ce0cb27920fc4ebb841b6dcb85912d"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110002_catalog",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 7.232,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.40388595536552313,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "b59ed2e1eb476689b45d19fafda9441f06cb2d04919487cd45ab4942452fb5cd"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110003_catalog",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "catalog",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "02ccc54c2c9ee48081c85a7c14c84b8c2ee81251c27e38d509d851ff31fec641"
+    },
+    {
+      "trial_id": "audit_same_color_green_box_910110003_hsv",
+      "case": "same_color",
+      "target": "green_box",
+      "backend": "hsv",
+      "original_success": true,
+      "conservative_success": true,
+      "conservative_arrival_sim_seconds": 8.608,
+      "object_geometry": {
+        "DISTRACTOR_A": [
+          0.34,
+          -0.21,
+          0.1
+        ],
+        "DISTRACTOR_B": [
+          0.45540757911854046,
+          0.21,
+          0.1
+        ]
+      },
+      "world_sha256": "ebf641911d4c345cdd20f3db4aaaf9ec05fb19042ebd72b5e6a47d82f03bbbc6"
+    }
+  ]
+}

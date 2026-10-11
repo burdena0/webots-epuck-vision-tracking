@@ -1,0 +1,38 @@
+{
+  "case": "occlusion",
+  "backend": "catalog",
+  "target": "green_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_occlusion_green_box_910110003_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": 11.776,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.0031879031517076176,
+  "max_forward_rad_s": 2.199999992926942,
+  "max_forward_during_occlusion_rad_s": 0,
+  "inference_median_ms": 1.9332999945618212,
+  "inference_p95_ms": 3.8957000069785863,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "lost",
+    "search",
+    "track"
+  ],
+  "wall_seconds": 12.574497699999483,
+  "world_sha256": "592c809f458bb6351f37a65fb434e11c158c0f0b3c2a307170f5481dafae595c"
+}

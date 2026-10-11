@@ -1,0 +1,38 @@
+{
+  "case": "occlusion",
+  "backend": "catalog",
+  "target": "red_box",
+  "seed": 910110002,
+  "duration": 25,
+  "trial_id": "audit_occlusion_red_box_910110002_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.40388595536552313,
+    -0.023158351427060117
+  ],
+  "initial_robot_heading": -0.028346607121140968,
+  "success": true,
+  "arrival_sim_seconds": 10.336,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.017377014616493804,
+  "max_forward_rad_s": 2.1999995970700628,
+  "max_forward_during_occlusion_rad_s": 0,
+  "inference_median_ms": 1.9278000108897686,
+  "inference_p95_ms": 4.520300019066781,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "lost",
+    "search",
+    "track"
+  ],
+  "wall_seconds": 14.856113500020001,
+  "world_sha256": "10d6f185aab4f777fe1e540735ecceb8a65f55cb654d7913af4cf3d81c03ab43"
+}

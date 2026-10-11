@@ -1,0 +1,38 @@
+{
+  "case": "occlusion",
+  "backend": "hsv",
+  "target": "blue_box",
+  "seed": 910110001,
+  "duration": 25,
+  "trial_id": "audit_occlusion_blue_box_910110001_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.42353776055346876,
+    -0.07409485893878776
+  ],
+  "initial_robot_heading": -0.004101900856890842,
+  "success": true,
+  "arrival_sim_seconds": 11.200000000000001,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.003960029037288405,
+  "max_forward_rad_s": 2.1999999823189382,
+  "max_forward_during_occlusion_rad_s": 0,
+  "inference_median_ms": 0.8333000005222857,
+  "inference_p95_ms": 1.4264000055845827,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "lost",
+    "search",
+    "track"
+  ],
+  "wall_seconds": 8.267443300021114,
+  "world_sha256": "0e3808ca3b63fbe8ca5af650e556e9583fd04a55e3bf27f6c56eaf1726a0a36e"
+}

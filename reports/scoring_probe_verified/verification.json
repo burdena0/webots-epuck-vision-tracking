@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "probe": "deliberate initial target overlap",
+  "success": false,
+  "collision": true,
+  "object_contact_samples": 312
+}

@@ -1,0 +1,36 @@
+{
+  "case": "dim",
+  "backend": "hsv",
+  "target": "blue_box",
+  "seed": 910110001,
+  "duration": 25,
+  "trial_id": "audit_dim_blue_box_910110001_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.42353776055346876,
+    -0.07409485893878776
+  ],
+  "initial_robot_heading": -0.004101900856890842,
+  "success": true,
+  "arrival_sim_seconds": 7.936,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.0036553739586401637,
+  "max_forward_rad_s": 2.1999999788681075,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.6169999833218753,
+  "inference_p95_ms": 1.0942999797407538,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 5.778955599991605,
+  "world_sha256": "3d57b4cf3695d61b1c3aa1949f847cc60a9d918f8193bb1addc83e613793ffc7"
+}

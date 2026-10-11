@@ -1,0 +1,32 @@
+INFO: camera_view: Starting controller: .\.venv\Scripts\python.exe -u camera_view.py --backend hsv --target blue_box --no-preview --hsv-settings .\reports\perception_audit\hsv_settings.json
+INFO: audit_supervisor: Starting controller: python.exe -u audit_supervisor.py
+camera ready. backend=hsv target=blue_box. press q to stop
+track: front=67.6 inference=15.87ms
+search: front=71.9 inference=0.65ms
+search: front=70.9 inference=0.61ms
+search: front=71.4 inference=0.80ms
+search: front=71.0 inference=0.84ms
+search: front=69.5 inference=0.81ms
+lost: front=68.2 inference=0.80ms
+lost: front=74.2 inference=0.99ms
+lost: front=68.6 inference=0.73ms
+lost: front=73.1 inference=0.77ms
+lost: front=69.9 inference=0.60ms
+lost: front=67.1 inference=0.75ms
+lost: front=66.5 inference=0.64ms
+lost: front=71.9 inference=0.76ms
+lost: front=66.3 inference=0.57ms
+lost: front=67.2 inference=0.67ms
+lost: front=69.4 inference=0.78ms
+lost: front=70.7 inference=0.67ms
+lost: front=73.2 inference=0.60ms
+lost: front=75.5 inference=0.68ms
+lost: front=71.3 inference=0.53ms
+lost: front=67.3 inference=0.68ms
+lost: front=69.2 inference=0.64ms
+lost: front=75.1 inference=0.53ms
+lost: front=69.3 inference=0.78ms
+lost: front=68.2 inference=0.59ms
+lost: front=72.8 inference=0.62ms
+INFO: camera_view: Terminating.
+INFO: audit_supervisor: Terminating.

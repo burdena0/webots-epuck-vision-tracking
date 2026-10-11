@@ -1,0 +1,35 @@
+{
+  "case": "missing",
+  "backend": "catalog",
+  "target": "blue_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_missing_blue_box_910110003_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": null,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": null,
+  "max_forward_rad_s": 0,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.287799997953698,
+  "inference_p95_ms": 3.1737000099383295,
+  "samples": 781,
+  "states": [
+    "lost",
+    "search"
+  ],
+  "wall_seconds": 10.406968499999493,
+  "world_sha256": "5296c65ef6a3f4b7016178456e36cec3e9718f5a6c441a06db99336edc5356d9"
+}

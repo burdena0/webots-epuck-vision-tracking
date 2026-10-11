@@ -1,0 +1,36 @@
+{
+  "case": "standard",
+  "backend": "hsv",
+  "target": "green_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_standard_green_box_910110003_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": 8.608,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.003008133831975325,
+  "max_forward_rad_s": 2.199999994442861,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.6152999994810671,
+  "inference_p95_ms": 0.8014999912120402,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 4.890905899985228,
+  "world_sha256": "8bd1dcb36035fbaa6b2c99aed0f8b8073f7491afab5372ff341f5bcdce57aed0"
+}

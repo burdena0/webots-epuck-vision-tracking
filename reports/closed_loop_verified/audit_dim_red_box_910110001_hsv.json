@@ -1,0 +1,36 @@
+{
+  "case": "dim",
+  "backend": "hsv",
+  "target": "red_box",
+  "seed": 910110001,
+  "duration": 25,
+  "trial_id": "audit_dim_red_box_910110001_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.42353776055346876,
+    -0.07409485893878776
+  ],
+  "initial_robot_heading": -0.004101900856890842,
+  "success": true,
+  "arrival_sim_seconds": 7.936,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.01871239655653493,
+  "max_forward_rad_s": 2.1999988238806796,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.750000006519258,
+  "inference_p95_ms": 1.0912000143434852,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 6.155041899997741,
+  "world_sha256": "c31780d41ebd5a2cfcdf7f40823f23e23bc3c9a70da9a87408299ba2fa84603f"
+}

@@ -1,0 +1,36 @@
+{
+  "case": "near_color",
+  "backend": "catalog",
+  "target": "blue_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_near_color_blue_box_910110003_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": 8.64,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.0027421870511630045,
+  "max_forward_rad_s": 2.1999999927612155,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.6882999916560948,
+  "inference_p95_ms": 2.8439000016078353,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 12.017096999974456,
+  "world_sha256": "ff8e0eac1be64a789dbd7b91b8df020b5c64af984c14c073779e22fa0cbfd6c5"
+}

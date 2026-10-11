@@ -1,0 +1,36 @@
+{
+  "case": "near_color",
+  "backend": "catalog",
+  "target": "green_box",
+  "seed": 910110002,
+  "duration": 25,
+  "trial_id": "audit_near_color_green_box_910110002_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.40388595536552313,
+    -0.023158351427060117
+  ],
+  "initial_robot_heading": -0.028346607121140968,
+  "success": true,
+  "arrival_sim_seconds": 7.232,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.0018043152123849784,
+  "max_forward_rad_s": 2.1999999964149803,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.815700001316145,
+  "inference_p95_ms": 2.8018000011797994,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 12.31184419998317,
+  "world_sha256": "3c0ae42e1b5c5ee645d1c84e5f75e4113f0fb6b04bf34e5ba522b1e180d8916b"
+}

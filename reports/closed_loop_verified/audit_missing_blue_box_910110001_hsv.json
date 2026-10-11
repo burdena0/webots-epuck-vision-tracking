@@ -1,0 +1,35 @@
+{
+  "case": "missing",
+  "backend": "hsv",
+  "target": "blue_box",
+  "seed": 910110001,
+  "duration": 25,
+  "trial_id": "audit_missing_blue_box_910110001_hsv",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.42353776055346876,
+    -0.07409485893878776
+  ],
+  "initial_robot_heading": -0.004101900856890842,
+  "success": true,
+  "arrival_sim_seconds": null,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": null,
+  "max_forward_rad_s": 0,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 0.5686000222340226,
+  "inference_p95_ms": 0.7833999989088625,
+  "samples": 781,
+  "states": [
+    "lost",
+    "search"
+  ],
+  "wall_seconds": 5.507532999996329,
+  "world_sha256": "a0dbe903ad380ae5bf41941aa1ad6baa6f47c6846d5aee8468cec956254e3687"
+}

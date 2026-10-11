@@ -1,0 +1,36 @@
+{
+  "case": "dim",
+  "backend": "catalog",
+  "target": "blue_box",
+  "seed": 910110001,
+  "duration": 25,
+  "trial_id": "audit_dim_blue_box_910110001_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.42353776055346876,
+    -0.07409485893878776
+  ],
+  "initial_robot_heading": -0.004101900856890842,
+  "success": true,
+  "arrival_sim_seconds": 7.968,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.004101728686159635,
+  "max_forward_rad_s": 2.199999034170775,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.2447000190149993,
+  "inference_p95_ms": 1.4661999884992838,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ],
+  "wall_seconds": 7.901460399996722,
+  "world_sha256": "c20651c871de8227328cd8ed1f358f6ba1e323f40671ff1d888d749642c61cb2"
+}

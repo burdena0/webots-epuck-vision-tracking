@@ -1,0 +1,74 @@
+{
+  "protocol": "12 S/V candidates on normal+dim calibration only; fixed class hue bands; first candidate breaks ties",
+  "seeds": [
+    810110001,
+    810110002
+  ],
+  "images": 360,
+  "selected": {
+    "saturation": 100,
+    "value": 20
+  },
+  "candidates": [
+    {
+      "saturation": 50,
+      "value": 20,
+      "macro_iou": 0.8717300874432888
+    },
+    {
+      "saturation": 50,
+      "value": 40,
+      "macro_iou": 0.7367325294110213
+    },
+    {
+      "saturation": 50,
+      "value": 60,
+      "macro_iou": 0.5692496462399196
+    },
+    {
+      "saturation": 50,
+      "value": 80,
+      "macro_iou": 0.443532667340136
+    },
+    {
+      "saturation": 75,
+      "value": 20,
+      "macro_iou": 0.9650734267646159
+    },
+    {
+      "saturation": 75,
+      "value": 40,
+      "macro_iou": 0.7813382598217643
+    },
+    {
+      "saturation": 75,
+      "value": 60,
+      "macro_iou": 0.5858540901097947
+    },
+    {
+      "saturation": 75,
+      "value": 80,
+      "macro_iou": 0.447045625054636
+    },
+    {
+      "saturation": 100,
+      "value": 20,
+      "macro_iou": 0.9795888906733817
+    },
+    {
+      "saturation": 100,
+      "value": 40,
+      "macro_iou": 0.7877103240492574
+    },
+    {
+      "saturation": 100,
+      "value": 60,
+      "macro_iou": 0.587343130407011
+    },
+    {
+      "saturation": 100,
+      "value": 80,
+      "macro_iou": 0.44713943913726223
+    }
+  ]
+}

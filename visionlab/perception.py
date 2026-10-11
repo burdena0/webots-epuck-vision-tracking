@@ -27,10 +27,21 @@ def component(mask, scores=None, min_area=0.003):
     return Detection(float(centers[index, 0]) / (mask.shape[1] - 1), area, confidence, (x, y, w, h))
 
 class HSVDetector:
+    # Class-specific ranges are fixed before audit; hue uses OpenCV's 0..179 scale.
+    HUES = {'red_box': ((0, 10), (170, 179)), 'blue_box': ((100, 130),), 'green_box': ((40, 85),)}
+
+    def __init__(self, target='red_box', saturation=100, value=60):
+        if target not in self.HUES:
+            raise ValueError(f'unknown HSV target {target}')
+        if not 0 <= saturation <= 255 or not 0 <= value <= 255:
+            raise ValueError('HSV saturation and value must be in 0..255')
+        self.target, self.saturation, self.value = target, saturation, value
+
     def detect(self, bgr):
         hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
-        mask = cv2.inRange(hsv, (0, 100, 60), (10, 255, 255))
-        mask |= cv2.inRange(hsv, (170, 100, 60), (179, 255, 255))
+        mask = np.zeros(bgr.shape[:2], np.uint8)
+        for low, high in self.HUES[self.target]:
+            mask |= cv2.inRange(hsv, (low, self.saturation, self.value), (high, 255, 255))
         return component(mask), mask
 
 class OriginalDetector:

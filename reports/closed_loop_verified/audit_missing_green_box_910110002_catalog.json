@@ -1,0 +1,35 @@
+{
+  "case": "missing",
+  "backend": "catalog",
+  "target": "green_box",
+  "seed": 910110002,
+  "duration": 25,
+  "trial_id": "audit_missing_green_box_910110002_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.40388595536552313,
+    -0.023158351427060117
+  ],
+  "initial_robot_heading": -0.028346607121140968,
+  "success": true,
+  "arrival_sim_seconds": null,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": null,
+  "max_forward_rad_s": 0,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.0941999789793044,
+  "inference_p95_ms": 1.4019999944139272,
+  "samples": 781,
+  "states": [
+    "lost",
+    "search"
+  ],
+  "wall_seconds": 8.38549939999939,
+  "world_sha256": "4cce60830e5ba06c1751cd29eae6833beb3e698fdf89e469378e6cceee4b00ba"
+}

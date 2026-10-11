@@ -17,10 +17,11 @@ def main():
     parser.add_argument('--backend', choices=['hsv', 'neural', 'original', 'catalog'], default='neural')
     parser.add_argument('--target', default='red_box')
     parser.add_argument('--target-bundle', type=Path, default=ROOT / 'models/targets')
+    parser.add_argument('--hsv-settings', type=Path)
     parser.add_argument('--no-preview', action='store_true')
     args = parser.parse_args()
-    if args.backend != 'catalog' and args.target != 'red_box':
-        parser.error('named targets need --backend catalog')
+    if args.backend not in ('catalog', 'hsv') and args.target != 'red_box':
+        parser.error('named targets need --backend catalog or hsv')
     robot = Robot()
     timestep = int(robot.getBasicTimeStep())
     motors = [robot.getDevice(name) for name in ('left wheel motor', 'right wheel motor')]
@@ -28,6 +29,10 @@ def main():
         motor.setPosition(float('inf'))
         motor.setVelocity(0)
     try:
+        settings = {}
+        if args.hsv_settings:
+            path = args.hsv_settings if args.hsv_settings.is_absolute() else ROOT / args.hsv_settings
+            settings = json.loads(path.read_text())['selected']
         if args.backend == 'catalog':
             from visionlab.targets import CatalogDetector
             bundle = args.target_bundle if args.target_bundle.is_absolute() else ROOT / args.target_bundle
@@ -36,9 +41,9 @@ def main():
             from visionlab.neural import NeuralDetector
             detector = NeuralDetector(ROOT / 'models/target_net.pt')
         else:
-            detector = OriginalDetector() if args.backend == 'original' else HSVDetector()
+            detector = OriginalDetector() if args.backend == 'original' else HSVDetector(args.target, **settings)
         policy = OriginalPolicy() if args.backend == 'original' else Policy()
-        reference = HSVDetector()
+        reference = HSVDetector(args.target, **settings)
         camera = robot.getDevice('camera')
         camera.enable(timestep)
         sensors = [robot.getDevice(f'ps{i}') for i in range(8)]

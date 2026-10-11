@@ -1,4 +1,5 @@
 .venv/
+controllers/*/runtime.ini
 __pycache__/
 *.pyc
 *.log

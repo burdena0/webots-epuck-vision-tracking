@@ -1,0 +1,37 @@
+{
+  "case": "near_color",
+  "backend": "catalog",
+  "target": "red_box",
+  "seed": 910110003,
+  "duration": 25,
+  "trial_id": "audit_near_color_red_box_910110003_catalog",
+  "output": ".\\reports\\closed_loop_verified",
+  "object_defs": [
+    "TARGET",
+    "DISTRACTOR_A",
+    "DISTRACTOR_B"
+  ],
+  "initial_target": [
+    0.45540757911854046,
+    -0.05512807803831242
+  ],
+  "initial_robot_heading": -0.03426671466869907,
+  "success": true,
+  "arrival_sim_seconds": 9.312,
+  "collision": false,
+  "object_contact_samples": 0,
+  "minimum_target_gap_m": 0.017647824911362887,
+  "max_forward_rad_s": 2.1999997644022087,
+  "max_forward_during_occlusion_rad_s": null,
+  "inference_median_ms": 1.5448000049218535,
+  "inference_p95_ms": 2.134000009391457,
+  "samples": 781,
+  "states": [
+    "approach",
+    "blocked",
+    "lost",
+    "track"
+  ],
+  "wall_seconds": 11.089872400014428,
+  "world_sha256": "a804e1fff408136e826b0c130e5056e16f082a0d7edacd735572de41511edea0"
+}

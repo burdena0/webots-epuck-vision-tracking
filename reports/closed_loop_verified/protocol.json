@@ -1,0 +1,34 @@
+{
+  "cases": [
+    "standard",
+    "dim",
+    "occlusion",
+    "near_color",
+    "missing",
+    "same_color"
+  ],
+  "targets": [
+    "red_box",
+    "blue_box",
+    "green_box"
+  ],
+  "seeds": [
+    910110001,
+    910110002,
+    910110003
+  ],
+  "duration": 25,
+  "hsv_settings_sha256": "80e97400a4f07379622bdca1f8d39d85ca04ba21633b5bf8d4567c8f7fa86325",
+  "sha256": {
+    "scripts/run_perception_trials.py": "b92076f858db0bd15ccc2e532c19fe4a32802ea0101f4377b7893a2201d48c65",
+    "controllers/audit_supervisor/audit_supervisor.py": "059cace57ec51b1a3a60731582af89ef3ed4c194dfed3c313756727af4284e6f",
+    "controllers/camera_view/camera_view.py": "b7026c749424cadb3ead31cbdb248b4ee1efe88f1f1bdd86accf7c876534378d",
+    "visionlab/control.py": "2f9057b37ee31068cb9818266d1397be5ca837ac6e61aa7c55894d5917a57d30",
+    "visionlab/evaluation.py": "783337117013d223dfbc05cf3dd5b8786415308558426a9587056bab5f4aa944",
+    "visionlab/perception.py": "5f7cf935024d7b6590bf4292e1726b774621a1a21241cf25ec098faec15a534f",
+    "visionlab/targets.py": "057718090afbb8d8e925389ae9bddb8bbfe2a3dd6ed9afb4fe594d08c6b5619a",
+    "models/targets/target_catalog.pt": "c08c3ee0b38818d58564e0ba2f830705197392a0bd1dfeac3ed29007d1f94208"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "webots_path": "webots.exe"
+}

@@ -1,0 +1,3962 @@
+{
+  "protocol": {
+    "cases": [
+      "standard",
+      "dim",
+      "occlusion",
+      "near_color",
+      "missing",
+      "same_color"
+    ],
+    "targets": [
+      "red_box",
+      "blue_box",
+      "green_box"
+    ],
+    "seeds": [
+      910110001,
+      910110002,
+      910110003
+    ],
+    "duration": 25,
+    "hsv_settings_sha256": "80e97400a4f07379622bdca1f8d39d85ca04ba21633b5bf8d4567c8f7fa86325",
+    "sha256": {
+      "scripts/run_perception_trials.py": "b92076f858db0bd15ccc2e532c19fe4a32802ea0101f4377b7893a2201d48c65",
+      "controllers/audit_supervisor/audit_supervisor.py": "059cace57ec51b1a3a60731582af89ef3ed4c194dfed3c313756727af4284e6f",
+      "controllers/camera_view/camera_view.py": "b7026c749424cadb3ead31cbdb248b4ee1efe88f1f1bdd86accf7c876534378d",
+      "visionlab/control.py": "2f9057b37ee31068cb9818266d1397be5ca837ac6e61aa7c55894d5917a57d30",
+      "visionlab/evaluation.py": "783337117013d223dfbc05cf3dd5b8786415308558426a9587056bab5f4aa944",
+      "visionlab/perception.py": "5f7cf935024d7b6590bf4292e1726b774621a1a21241cf25ec098faec15a534f",
+      "visionlab/targets.py": "057718090afbb8d8e925389ae9bddb8bbfe2a3dd6ed9afb4fe594d08c6b5619a",
+      "models/targets/target_catalog.pt": "c08c3ee0b38818d58564e0ba2f830705197392a0bd1dfeac3ed29007d1f94208"
+    },
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "webots_path": "webots.exe"
+  },
+  "trials": [
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.936,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01889695184098337,
+      "max_forward_rad_s": 2.199998445097575,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.672999991569668,
+      "inference_p95_ms": 2.879500010749325,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 11.936425099993357,
+      "world_sha256": "e5b291eb90f7d9929595930c36903a9257aba29916b707b80aa3c30e8da46afb"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.872,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.018906707990713402,
+      "max_forward_rad_s": 2.1999987175032047,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8552999934181571,
+      "inference_p95_ms": 1.3900999911129475,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.681398499989882,
+      "world_sha256": "9fc41aeb41f1bb933fb14ac8b0fd9d49b5ca732dc12665068e29472154860bf5"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.019467032552152853,
+      "max_forward_rad_s": 2.1999997295057927,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8677000005263835,
+      "inference_p95_ms": 1.269300002604723,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.77519570000004,
+      "world_sha256": "604572ddbfc5ef6959e29848e64b3e2d46fde11ddd699b439c6d013be1040344"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.019291045613763193,
+      "max_forward_rad_s": 2.19999967684057,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7311999981757253,
+      "inference_p95_ms": 2.783599979011342,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.216318399994634,
+      "world_sha256": "36f66744790adc22e1db4eea68d12469adaf3c4872f1cc89d7c5aac3bfc5f78d"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.48,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01847723454253434,
+      "max_forward_rad_s": 2.199999271132346,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.6746999754104763,
+      "inference_p95_ms": 2.8389999934006482,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.694878400012385,
+      "world_sha256": "55090fbe3a77e236be4b6a457f7513e863d86a7617618803f43e54e5e4b51717"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.384,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.018181299778100603,
+      "max_forward_rad_s": 2.1999993731644985,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7866999949328601,
+      "inference_p95_ms": 1.1317000025883317,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 6.676964099984616,
+      "world_sha256": "4e8c0761568808ca0227948012dd024b006830df8e6b1d87f5414eb627096a04"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0033458834782379224,
+      "max_forward_rad_s": 2.1999999846294136,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.138599996920675,
+      "inference_p95_ms": 1.3441999908536673,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.1993700999883,
+      "world_sha256": "8f4d216382659a8d43bcf14273bd2c0a0fd80232d53382d5c2fdb4192989cf3f"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.936,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0036553739586401637,
+      "max_forward_rad_s": 2.1999999788681075,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.607599999057129,
+      "inference_p95_ms": 0.7515000179409981,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 4.741723199986154,
+      "world_sha256": "a1201e3cbb967bf043269a5e6c2990fc057e9a560b270aa3328a0c3c57877d45"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003403973229914349,
+      "max_forward_rad_s": 2.199999997585509,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6131000118330121,
+      "inference_p95_ms": 0.7282999868039042,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked"
+      ],
+      "wall_seconds": 4.766155699995579,
+      "world_sha256": "c1aa858d8d157d3ae715ee944a7a9c4287803f06cdacd9a2ac891fbf6023d774"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002128405922963851,
+      "max_forward_rad_s": 2.199999996916483,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1720999900717288,
+      "inference_p95_ms": 1.466100016841665,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.211491099995328,
+      "world_sha256": "d8962ab4c817276377cf15cf0dfc717f10d8bf1473435b6d129a0a32e16dda04"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002858361153674528,
+      "max_forward_rad_s": 2.199999992692388,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1437000066507608,
+      "inference_p95_ms": 1.3134999899193645,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.1134407999925315,
+      "world_sha256": "fa872b0b0beaad79abc38681b23573a31166626a5cff20e04a6705665fb54e28"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.576,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003129354470854419,
+      "max_forward_rad_s": 2.1999999908288843,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5815000040456653,
+      "inference_p95_ms": 0.697199982823804,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked"
+      ],
+      "wall_seconds": 4.5855004000186455,
+      "world_sha256": "62608fb777b6766b3a3ad459c202243995b70e2f9d0a4e785c189a5ba9e591fb"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.00319790873260576,
+      "max_forward_rad_s": 2.199999985626349,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1513000063132495,
+      "inference_p95_ms": 1.287799997953698,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 6.885872900020331,
+      "world_sha256": "286999d4406a1d6b933d8156c02bbc035945ff37d53ab5b6d4c6e7369253862a"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003254276145115177,
+      "max_forward_rad_s": 2.1999999903208356,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6167000101413578,
+      "inference_p95_ms": 0.8488000021316111,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 4.839550199976657,
+      "world_sha256": "6a4edbee2b57361d30511bfafdc3c00592c2d4f8eef14e162ce917f9bf99bef4"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0019330530479714572,
+      "max_forward_rad_s": 2.1999999978050644,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6302999972831458,
+      "inference_p95_ms": 0.8027000003494322,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 4.6357285999984015,
+      "world_sha256": "8cb2bdfec5a6cdab01eac504ac2ab8415fc965fd0bcd4154cb9320018275298c"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0018043152123849784,
+      "max_forward_rad_s": 2.1999999964149803,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1442000104580075,
+      "inference_p95_ms": 1.3660999829880893,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 6.848308199987514,
+      "world_sha256": "564575a46f0440ec82806f7ea6d260592b5f6e3a91640402625d4610343cef97"
+    },
+    {
+      "case": "standard",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002539105140511179,
+      "max_forward_rad_s": 2.19999999480382,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1380999931134284,
+      "inference_p95_ms": 1.2725999986287206,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.037356000015279,
+      "world_sha256": "e5fd0f76cad8e44a6e863247c483ac5ea176bac162e20365b9e1d75c32040108"
+    },
+    {
+      "case": "standard",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_standard_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003008133831975325,
+      "max_forward_rad_s": 2.199999994442861,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6152999994810671,
+      "inference_p95_ms": 0.8014999912120402,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 4.890905899985228,
+      "world_sha256": "8bd1dcb36035fbaa6b2c99aed0f8b8073f7491afab5372ff341f5bcdce57aed0"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.936,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.018854585744943288,
+      "max_forward_rad_s": 2.1951490591140996,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.4213999966159463,
+      "inference_p95_ms": 3.3801000099629164,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 9.295137499982957,
+      "world_sha256": "72d0a684cd53298b4fa1b821aee14a518286806b190b2f218b2ccc17b908b5e9"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.936,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01871239655653493,
+      "max_forward_rad_s": 2.1999988238806796,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.750000006519258,
+      "inference_p95_ms": 1.0912000143434852,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 6.155041899997741,
+      "world_sha256": "c31780d41ebd5a2cfcdf7f40823f23e23bc3c9a70da9a87408299ba2fa84603f"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0194796149240584,
+      "max_forward_rad_s": 2.199999806330559,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7216999947559088,
+      "inference_p95_ms": 1.0482000070624053,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.200691199977882,
+      "world_sha256": "e0212b193d3ff2b80c4160a09c1da065ca99d876ef6b3b273d68a394de381802"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0191319083600374,
+      "max_forward_rad_s": 2.1996687145160565,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1500999971758574,
+      "inference_p95_ms": 1.3244999863673002,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.113410799996927,
+      "world_sha256": "a67a8e03ae525c9920baafefe0a86d6b2e9bdc9890ec2b71a6fb11ff09448f6a"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.448,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01835439753916083,
+      "max_forward_rad_s": 2.1954144720070508,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1464999988675117,
+      "inference_p95_ms": 1.3309000059962273,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 6.933417300024303,
+      "world_sha256": "a69377174716b6d5ec4565257a06f5826cfee2929899f21ebdba1659275d7777"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.48,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01850875747017503,
+      "max_forward_rad_s": 2.199999324749682,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7170000171754509,
+      "inference_p95_ms": 1.1060999822802842,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.154371699987678,
+      "world_sha256": "b5583c38ea81e41b940749e6a62254558f99ba5010427b24c8775e9279a22bf1"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.968,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.004101728686159635,
+      "max_forward_rad_s": 2.199999034170775,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.2447000190149993,
+      "inference_p95_ms": 1.4661999884992838,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.901460399996722,
+      "world_sha256": "c20651c871de8227328cd8ed1f358f6ba1e323f40671ff1d888d749642c61cb2"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 7.936,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0036553739586401637,
+      "max_forward_rad_s": 2.1999999788681075,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6169999833218753,
+      "inference_p95_ms": 1.0942999797407538,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.778955599991605,
+      "world_sha256": "3d57b4cf3695d61b1c3aa1949f847cc60a9d918f8193bb1addc83e613793ffc7"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003406948013772927,
+      "max_forward_rad_s": 2.199999997570032,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7284999883268028,
+      "inference_p95_ms": 1.1785999813582748,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked"
+      ],
+      "wall_seconds": 5.982720300002256,
+      "world_sha256": "aedaa445930b781a99fff9611dc7aae27d4b22c6e82a085a88fecf39366a8017"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0024235826325951573,
+      "max_forward_rad_s": 2.199988086083681,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.2746999855153263,
+      "inference_p95_ms": 1.8411999917589128,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.41464870001073,
+      "world_sha256": "02db670b93c8b867c3219727f6a069d687ce7500e8391d020513729699edc14f"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0028739845747306272,
+      "max_forward_rad_s": 2.199999507230775,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.193600008264184,
+      "inference_p95_ms": 1.651099999435246,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.904437199991662,
+      "world_sha256": "085e1947e5d882f3b207889712903316c6ab5d0ab6d85950eb5a6eee7ae7201e"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.576,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003129354470854419,
+      "max_forward_rad_s": 2.1999999908288843,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6356000085361302,
+      "inference_p95_ms": 0.8122999861370772,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked"
+      ],
+      "wall_seconds": 4.861922700016294,
+      "world_sha256": "3f1a90955701d3d412ce851d1100d1967bfb328d175e411c32184694434ab07b"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.032,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003975172164555153,
+      "max_forward_rad_s": 2.192799080435121,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1660000018309802,
+      "inference_p95_ms": 1.5783999988343567,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.664847300009569,
+      "world_sha256": "ef8b2616e5b19bb22c11508b6d1734519d69b29fe8e53e868a50fd106637101b"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003254276145115177,
+      "max_forward_rad_s": 2.1999999903208356,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6105999927967787,
+      "inference_p95_ms": 0.8148999768309295,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.260271600011038,
+      "world_sha256": "75ba8cae45ad8f76f8d49ea254098e18d8b5e21fc7dfdada199594728341c290"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0019330530479714572,
+      "max_forward_rad_s": 2.1999999978050644,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6358999817166477,
+      "inference_p95_ms": 0.8587999909650534,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.300224300008267,
+      "world_sha256": "93b416641b1a8c50328c95e8099204581901a9e6100efc07a7ac430760d67c61"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.00306273809579969,
+      "max_forward_rad_s": 2.1998793736482583,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.2350000033620745,
+      "inference_p95_ms": 1.9115000031888485,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.040947800007416,
+      "world_sha256": "b621b0535d331cde901f6c052b822bee655cf9563cd4bb4a43d6df9cc1772a77"
+    },
+    {
+      "case": "dim",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.64,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002650632418551048,
+      "max_forward_rad_s": 2.198674301899711,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.2765999999828637,
+      "inference_p95_ms": 1.645299984375015,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.371675900008995,
+      "world_sha256": "3359ed78205fed815758d9e7c55b5ea0e4da977b9ab6277d5bbba10655f63d0e"
+    },
+    {
+      "case": "dim",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_dim_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003008133831975325,
+      "max_forward_rad_s": 2.199999994442861,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7073000015225261,
+      "inference_p95_ms": 1.0636000079102814,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.828643100016052,
+      "world_sha256": "c9af658b9e985b73544295f2d2ddf457aa642792f3ec7a86dcc9b3b105762d75"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.040000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.018424725161009715,
+      "max_forward_rad_s": 2.199998930750195,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.2052999809384346,
+      "inference_p95_ms": 1.5211999998427927,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.8711053999722935,
+      "world_sha256": "3ac007c4dc976035d9cdd4397afc82dc486271b7332fb4a83874d501ea5b2e3c"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.040000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01859116351111565,
+      "max_forward_rad_s": 2.1999986861215515,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.6228999991435558,
+      "inference_p95_ms": 0.8096999954432249,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 5.054868400009582,
+      "world_sha256": "36582d9578904ec80f7a5d9cab8e09f72b1307576731c14d6e5f4774581cea82"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.336,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017265405415382497,
+      "max_forward_rad_s": 2.199999677432369,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.8553999941796064,
+      "inference_p95_ms": 1.3259999977890402,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.340989100019215,
+      "world_sha256": "f4cc88b43768ce9dd508e942abf2deca4d962e1053c2e8f15015963f7967a2e1"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.336,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017377014616493804,
+      "max_forward_rad_s": 2.1999995970700628,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.9278000108897686,
+      "inference_p95_ms": 4.520300019066781,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 14.856113500020001,
+      "world_sha256": "10d6f185aab4f777fe1e540735ecceb8a65f55cb654d7913af4cf3d81c03ab43"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.744,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017585030263280378,
+      "max_forward_rad_s": 2.199999394522184,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.7097000090871006,
+      "inference_p95_ms": 2.6852999872062355,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 13.411217899993062,
+      "world_sha256": "5c0aba0bb97688edb8b0f4acdd2ef7e9a0f6dfe537831938f58eeef61413f977"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.744,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017337627614557073,
+      "max_forward_rad_s": 2.199999409324335,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.8619000145699829,
+      "inference_p95_ms": 1.27119998796843,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.058999100001529,
+      "world_sha256": "db44a5db6dfdc02f8f9d28b4c48f2aee71c3d66d95224efa6ad53289d4cdd915"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.200000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0035636152176518957,
+      "max_forward_rad_s": 2.1999999849116523,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.7176000110339373,
+      "inference_p95_ms": 2.9704000044148415,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 12.575007500010543,
+      "world_sha256": "041e1a49c37cdd526757318ceeb72acee9f389dc1459a48eb2e8ddbe24857915"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.200000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003960029037288405,
+      "max_forward_rad_s": 2.1999999823189382,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.8333000005222857,
+      "inference_p95_ms": 1.4264000055845827,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.267443300021114,
+      "world_sha256": "0e3808ca3b63fbe8ca5af650e556e9583fd04a55e3bf27f6c56eaf1726a0a36e"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.464,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0029393339490195527,
+      "max_forward_rad_s": 2.199999996933244,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.9398999973200262,
+      "inference_p95_ms": 1.7031999886967242,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 10.15134310000576,
+      "world_sha256": "9f1a03263c8d0c00f1a16e2f3897a584d95deec8428f8c5ce051b2af7bef8ea1"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.432,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0029174399605689585,
+      "max_forward_rad_s": 2.1999999969161226,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.8925000040326267,
+      "inference_p95_ms": 3.383400005986914,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 13.718090699985623,
+      "world_sha256": "575a90b264db35d9502adb279179121556cd720bd9fd88f501e989f8490ed820"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.776,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0029975527701176855,
+      "max_forward_rad_s": 2.1999999927275566,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 2.043000014964491,
+      "inference_p95_ms": 4.556500003673136,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 15.737611399992602,
+      "world_sha256": "076c69f8c14ef5947e788a68e129131640edb6ddde175afb85a38288ea9f73b2"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.904,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0036725219962328373,
+      "max_forward_rad_s": 2.199999989626566,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.874500023201108,
+      "inference_p95_ms": 1.4535000082105398,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.724631499993848,
+      "world_sha256": "1bc8b08208f3fa80c778c40d760c3fb724dda1d677429d370fc1c583760a4045"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.200000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003387561810725838,
+      "max_forward_rad_s": 2.1999999841857627,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.8458999984432012,
+      "inference_p95_ms": 3.502599982311949,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 14.590557499992428,
+      "world_sha256": "553f02f31a12212b763005cc7f9b64c377b179c7b02eec2a53b6b707ac5efd6b"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 11.200000000000001,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0032715210906607353,
+      "max_forward_rad_s": 2.1999999866951367,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.8447000000160187,
+      "inference_p95_ms": 1.5149000100791454,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.941982600023039,
+      "world_sha256": "5c74b86912d707e11f7038e192b2e8afef5cb5b51df4843cb058befda453227c"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.432,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0029769462408996486,
+      "max_forward_rad_s": 2.1999999976034688,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.8914000063668936,
+      "inference_p95_ms": 1.5564000059384853,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 10.11574079998536,
+      "world_sha256": "f72b1b2e3152aee59d548a87ff74c9f40fc80eb846505b741a695a6f4c6c1904"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 10.432,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002953177161383748,
+      "max_forward_rad_s": 2.1999999969024144,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.5506999916397035,
+      "inference_p95_ms": 2.5667999871075153,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 12.287244600011036,
+      "world_sha256": "f10b54104db97694016a4b7c7a07332566dc99a80fdafac4171eac316f01b0ef"
+    },
+    {
+      "case": "occlusion",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.776,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0031879031517076176,
+      "max_forward_rad_s": 2.199999992926942,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 1.9332999945618212,
+      "inference_p95_ms": 3.8957000069785863,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 12.574497699999483,
+      "world_sha256": "592c809f458bb6351f37a65fb434e11c158c0f0b3c2a307170f5481dafae595c"
+    },
+    {
+      "case": "occlusion",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_occlusion_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 11.776,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003028929095468459,
+      "max_forward_rad_s": 2.1999999942835133,
+      "max_forward_during_occlusion_rad_s": 0,
+      "inference_median_ms": 0.7939999923110008,
+      "inference_p95_ms": 1.2904999894089997,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.934249899990391,
+      "world_sha256": "40ba8d6ec7a7a8d56042ccd2db158ff2fadaa04d4648776fba0a61103af2f645"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.16,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.018076557705042885,
+      "max_forward_rad_s": 2.1999990270365917,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.8355000065639615,
+      "inference_p95_ms": 2.9291999817360193,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 13.192183599981945,
+      "world_sha256": "3ffff7ab17fa804489d0a43ca63c0dd5b55a3793d162aa7fe431a514dec16810"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 19.136,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01922039509288207,
+      "max_forward_rad_s": 2.1997956608278932,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8830000006128103,
+      "inference_p95_ms": 1.3215999933890998,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.473253500007559,
+      "world_sha256": "9dbe39ac51cfaea2d4992978c3a9989605de7f2a452e58d94b1b5b12c7419440"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0480851173884314,
+      "max_forward_rad_s": 2.1999278127342223,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.9120000177063048,
+      "inference_p95_ms": 1.3364999904297292,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.314165100018727,
+      "world_sha256": "349e202dc02d970ea1b519681385bbb6eea9a43b323b9dd0b017e86a36b8a4c8"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.019291045613763193,
+      "max_forward_rad_s": 2.19999967684057,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7318000027444214,
+      "inference_p95_ms": 2.7651000127661973,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.562972300016554,
+      "world_sha256": "18856c1c9837ca9ae2d2967026588a839104b8d284b687310bceff233c225445"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 9.312,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017647824911362887,
+      "max_forward_rad_s": 2.1999997644022087,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.5448000049218535,
+      "inference_p95_ms": 2.134000009391457,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "track"
+      ],
+      "wall_seconds": 11.089872400014428,
+      "world_sha256": "a804e1fff408136e826b0c130e5056e16f082a0d7edacd735572de41511edea0"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 23.68,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.019714754211213416,
+      "max_forward_rad_s": 2.1984213020611154,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8548999903723598,
+      "inference_p95_ms": 1.271100016310811,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.361143100017216,
+      "world_sha256": "2bd9e01073d386ea9deee3c841ac394ad912991c45b574d36a6adbaae27e333a"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.032,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0034044325580802406,
+      "max_forward_rad_s": 2.199999984669291,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.6359000001102686,
+      "inference_p95_ms": 2.630300004966557,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 11.240087200014386,
+      "world_sha256": "c794ce2d87c6c5a0d0b5ec42658af218079671dbf5ac071a5b228e962850b589"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.448,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003556750759990769,
+      "max_forward_rad_s": 2.199999984002582,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.828799995360896,
+      "inference_p95_ms": 1.228499982971698,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.864212399988901,
+      "world_sha256": "205bfcaf2be3ae22dbca43cec14d99d8ee451d7a168697122bcc7ce63b6fec9f"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.872,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0027091140559147645,
+      "max_forward_rad_s": 2.199999997417535,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8053999918047339,
+      "inference_p95_ms": 1.2707000132650137,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.50562959999661,
+      "world_sha256": "38576bbbf65a896bca60e20016887fd517be2fbd90830326ef67a89af5e8c00c"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002128405922963851,
+      "max_forward_rad_s": 2.199999996916483,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7108999891206622,
+      "inference_p95_ms": 2.8737000247929245,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.683299199998146,
+      "world_sha256": "5b4391376691eef073c05935aed38e006d73940236e1922b74c3472309b00d2d"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.64,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0027421870511630045,
+      "max_forward_rad_s": 2.1999999927612155,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.6882999916560948,
+      "inference_p95_ms": 2.8439000016078353,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.017096999974456,
+      "world_sha256": "ff8e0eac1be64a789dbd7b91b8df020b5c64af984c14c073779e22fa0cbfd6c5"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 9.728,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.00340321613413095,
+      "max_forward_rad_s": 2.199999991817233,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7404999923892319,
+      "inference_p95_ms": 1.1630000080913305,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.2908277999958955,
+      "world_sha256": "ee725ef89874c5cdd1dea3274096f1e05fb9b2b19a044963e1d915954ea07eca"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003095760069380428,
+      "max_forward_rad_s": 2.1999999815499347,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.719699997920543,
+      "inference_p95_ms": 2.7578000153880566,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.13667720000376,
+      "world_sha256": "c30f2d35fb49aa613f2a010240a59cdf78ecfaff24e9b37a3b6208df14056a10"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.0,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003254276145115177,
+      "max_forward_rad_s": 2.1999999903208356,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8726999803911895,
+      "inference_p95_ms": 1.587700011441484,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.484052199986763,
+      "world_sha256": "323dd2f7abca3852d7d1748efe1586ee38193ebc1aee4b4bcd82280d05f7767c"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0019330530479714572,
+      "max_forward_rad_s": 2.1999999978050644,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8876000065356493,
+      "inference_p95_ms": 1.4548000181093812,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.221341199998278,
+      "world_sha256": "4cedc2471c5bc5782a57a99c90b1c0fcedf70e67dd3cab78ab0160409e38a427"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0018043152123849784,
+      "max_forward_rad_s": 2.1999999964149803,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.815700001316145,
+      "inference_p95_ms": 2.8018000011797994,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.31184419998317,
+      "world_sha256": "3c0ae42e1b5c5ee645d1c84e5f75e4113f0fb6b04bf34e5ba522b1e180d8916b"
+    },
+    {
+      "case": "near_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0028902704607912458,
+      "max_forward_rad_s": 2.1999999934374763,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7102000128943473,
+      "inference_p95_ms": 2.8688999882433563,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.278557399986312,
+      "world_sha256": "2b78b71a62981476e51549bb1f13e8b0dbfb94875b328c9ea2f36dd95585d09e"
+    },
+    {
+      "case": "near_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_near_color_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003008133831975325,
+      "max_forward_rad_s": 2.199999994442861,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8911000040825456,
+      "inference_p95_ms": 1.522899983683601,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.47251670001424,
+      "world_sha256": "f5433b5e99ec956177565be65ab8b2a2cba0721eb7cb3dcb92d9624455ac1d8a"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.3970000145491213,
+      "inference_p95_ms": 2.9193999944254756,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 13.106607499998063,
+      "world_sha256": "2090dfc77608b4c0809254653138d1f9dea4ed821d6bf4ee449b8f30aa509d2f"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7254999945871532,
+      "inference_p95_ms": 1.0162000253330916,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.246592000010423,
+      "world_sha256": "1dd99a0697cbfc98b10c4726e6e68fb2a8fa655c80d222cacbacfedce2ef46eb"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6973000126890838,
+      "inference_p95_ms": 0.9407000034116209,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 6.471490500000073,
+      "world_sha256": "dc77fa7a4f88bd8373dee130264d3008d402d979ebd965d43753ffd5a4930c72"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8659999875817448,
+      "inference_p95_ms": 1.1537999962456524,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.351829199993517,
+      "world_sha256": "a0b6bb9ee454ea81059ab866343c58cea296c0960c545e5d000618c2d2699346"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8549000194761902,
+      "inference_p95_ms": 1.0210000036749989,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.0927700999891385,
+      "world_sha256": "68c3aee5e1b6990770238b888f9cae6b4fe2ea6981c555e4bba3a13a27a8194a"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5231999966781586,
+      "inference_p95_ms": 0.7471000135410577,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 4.796170299989171,
+      "world_sha256": "ca53b9648faa48c105626e7e0426a7913e02554efd9db9e1f39a462c106cd3b2"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8656999852973968,
+      "inference_p95_ms": 1.188399997772649,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 6.980688099982217,
+      "world_sha256": "45bf06a160afc33038f1f3ef139255189925afa6df6b5dae63534e6ef63c85be"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5686000222340226,
+      "inference_p95_ms": 0.7833999989088625,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 5.507532999996329,
+      "world_sha256": "a0dbe903ad380ae5bf41941aa1ad6baa6f47c6846d5aee8468cec956254e3687"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6333999917842448,
+      "inference_p95_ms": 0.9456999832764268,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 6.054447500006063,
+      "world_sha256": "f30dfaca9bbcb27f494e7668571e9ec48f7fe6fa28a734f3458e41bd48757d3d"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.0341999877709895,
+      "inference_p95_ms": 1.2944999907631427,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 8.083994699991308,
+      "world_sha256": "c9914044c545b8d9bbca8a002b1aac23edb93ba1d4c267c8db0025b990aea665"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.287799997953698,
+      "inference_p95_ms": 3.1737000099383295,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 10.406968499999493,
+      "world_sha256": "5296c65ef6a3f4b7016178456e36cec3e9718f5a6c441a06db99336edc5356d9"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5759000196121633,
+      "inference_p95_ms": 0.8192999812308699,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 5.69386949998443,
+      "world_sha256": "01958028496127f963a2960811e8109e9bab259a237f0f41958891eee2eb38fa"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.0207000013906509,
+      "inference_p95_ms": 1.9746999896597117,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 8.54262409999501,
+      "world_sha256": "7cf20d1909038a3b6987cfc0ea7c1b906c1d709fd97a544e1074893ce0eac65f"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.4957999917678535,
+      "inference_p95_ms": 0.7266999746207148,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 5.496746299992083,
+      "world_sha256": "1b776b3eaa7e2b8b89eeae9efff25582f4a8df31cc35b62f201352fc8b81bd22"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5139000131748617,
+      "inference_p95_ms": 0.8578000124543905,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 5.4639588999853,
+      "world_sha256": "7c74a6e9b59ebdac3510fb3318afdfcfc0439263f50f528f46f3bca1ad034446"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.0941999789793044,
+      "inference_p95_ms": 1.4019999944139272,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 8.38549939999939,
+      "world_sha256": "4cce60830e5ba06c1751cd29eae6833beb3e698fdf89e469378e6cceee4b00ba"
+    },
+    {
+      "case": "missing",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.0127999994438142,
+      "inference_p95_ms": 1.464799977838993,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 7.9853777999815065,
+      "world_sha256": "a9fe527d2e312aa21c6d6579052bf7bc0816ce9719a98fa0d0e442d1afa918d1"
+    },
+    {
+      "case": "missing",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_missing_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": null,
+      "max_forward_rad_s": 0,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.4422999918460846,
+      "inference_p95_ms": 0.6231000006664544,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search"
+      ],
+      "wall_seconds": 4.987399599980563,
+      "world_sha256": "1951b72e345515397be42b3eb54cfdfceb46d6239e9f49bba6aac53678398c54"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.10075865029753367,
+      "max_forward_rad_s": 2.1994133376072282,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.5217999753076583,
+      "inference_p95_ms": 2.4024000158533454,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 9.502253800019389,
+      "world_sha256": "3235e3d1529200ab06d935d88ca22947209f89d0c3aa8eef2817dc9080c430ba"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.08303133868225612,
+      "max_forward_rad_s": 2.199983267154954,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8817999914754182,
+      "inference_p95_ms": 1.3307000044733286,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 7.877470500010531,
+      "world_sha256": "a5c1c773b23ab2c89dc5ecc0fcfe29d263e6bcc305a4047340deb918dbff54f8"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.5520000000000005,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.017186854224872296,
+      "max_forward_rad_s": 2.1999998774561402,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8227000071201473,
+      "inference_p95_ms": 1.1081999982707202,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "track"
+      ],
+      "wall_seconds": 6.987818200024776,
+      "world_sha256": "28e8d8410719d5803d4619734acf7590704b73b8d5541f905e92660155ecf840"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 6.88,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.019291045613763193,
+      "max_forward_rad_s": 2.19999967684057,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.874799985671416,
+      "inference_p95_ms": 3.8075000047683716,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 12.464011200005189,
+      "world_sha256": "1deebcf2ef1a88d4d6a9e523a7a702cee3d01be5dbbb0ba6d08e81569564dca5"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.48,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.01829798291861704,
+      "max_forward_rad_s": 2.199999287948822,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.8803999992087483,
+      "inference_p95_ms": 6.715699972119182,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 14.902806700003566,
+      "world_sha256": "52e7947ce3bf34513221ed706ccbdd26a9bfa84931448642ba277e9d055f9777"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "red_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_red_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.1220542781095294,
+      "max_forward_rad_s": 2.199933494856895,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.8999999845400453,
+      "inference_p95_ms": 1.3371999957598746,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "track"
+      ],
+      "wall_seconds": 7.770762300002389,
+      "world_sha256": "9be6c81f306e42ed78283ffb59d660ee66a6f29710869aeb1534a5f9a0c52885"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.08671761891980576,
+      "max_forward_rad_s": 2.1999970064695678,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7355000018142164,
+      "inference_p95_ms": 3.0765999981667846,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 11.191858899983345,
+      "world_sha256": "4d7e63c960ab4c327c9a4b44ce5f48d2473299196c177af8a3a1cf20f7d6a894"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.32090621027720895,
+      "max_forward_rad_s": 1.442235719335138,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7272999791894108,
+      "inference_p95_ms": 0.9805999870877713,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 6.2521012000215705,
+      "world_sha256": "597bc24a43d298ec72760455cf6da4a644e4fbe1b033318ff53230ef40442fc6"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.29815894875432336,
+      "max_forward_rad_s": 1.809202210415998,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.7194000063464046,
+      "inference_p95_ms": 0.9637000039219856,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 6.460184499999741,
+      "world_sha256": "c764150d230b404d76a75eefc29d07d22adc1224d15bb8f609f8e226cec3a8ca"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002128405922963851,
+      "max_forward_rad_s": 2.199999996916483,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.7914000200107694,
+      "inference_p95_ms": 4.261199996108189,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 11.727337499993155,
+      "world_sha256": "6e010af288468215ffd83540e4c5f55a20968cf56911cbf6ec3efa5d78fac3c8"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003005943781290689,
+      "max_forward_rad_s": 2.1999999913987276,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1692999978549778,
+      "inference_p95_ms": 1.4771000132896006,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 8.014847700018436,
+      "world_sha256": "3b881d0656f9442739e044b588fe4b5d736598b6598fee588e94c373ebee06aa"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "blue_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_blue_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.3495808890310044,
+      "max_forward_rad_s": 1.6393031823577675,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.5713999853469431,
+      "inference_p95_ms": 0.7601000252179801,
+      "samples": 781,
+      "states": [
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 5.1394179000053555,
+      "world_sha256": "6665e82cac28fade9044d08ef28ec9f6512d583eef8abf11db4d4b55ba5dea5f"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110001_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": false,
+      "arrival_sim_seconds": null,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.08691622875141533,
+      "max_forward_rad_s": 2.1999980631867477,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.4063999988138676,
+      "inference_p95_ms": 1.5710000006947666,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "lost",
+        "search",
+        "track"
+      ],
+      "wall_seconds": 8.691238500003237,
+      "world_sha256": "40a0a65d2c95966232c00c0f0af18446eb3a9b0bad6164476369b5c7c1c9a69b"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110001,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110001_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.42353776055346876,
+        -0.07409485893878776
+      ],
+      "initial_robot_heading": -0.004101900856890842,
+      "success": true,
+      "arrival_sim_seconds": 8.256,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.004035960526332018,
+      "max_forward_rad_s": 2.1999989166599625,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6591999845113605,
+      "inference_p95_ms": 0.8359999919775873,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 4.936767000006512,
+      "world_sha256": "3f34b50523bc62aacf904152821437f7faff1e0c44b0bd92bf02eef10b54318b"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110002_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0019330530479714572,
+      "max_forward_rad_s": 2.1999999978050644,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6787000165786594,
+      "inference_p95_ms": 0.8882000111043453,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.190163399995072,
+      "world_sha256": "48b07f703ff4680cc12e23a83c23075d71ce0cb27920fc4ebb841b6dcb85912d"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110002,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110002_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.40388595536552313,
+        -0.023158351427060117
+      ],
+      "initial_robot_heading": -0.028346607121140968,
+      "success": true,
+      "arrival_sim_seconds": 7.232,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.0018043152123849784,
+      "max_forward_rad_s": 2.1999999964149803,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1747999815270305,
+      "inference_p95_ms": 1.503700012108311,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.656480600009672,
+      "world_sha256": "b59ed2e1eb476689b45d19fafda9441f06cb2d04919487cd45ab4942452fb5cd"
+    },
+    {
+      "case": "same_color",
+      "backend": "catalog",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110003_catalog",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.002673696238401392,
+      "max_forward_rad_s": 2.1999999926066867,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 1.1535999947227538,
+      "inference_p95_ms": 1.2986999936401844,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 7.0927550999913365,
+      "world_sha256": "02ccc54c2c9ee48081c85a7c14c84b8c2ee81251c27e38d509d851ff31fec641"
+    },
+    {
+      "case": "same_color",
+      "backend": "hsv",
+      "target": "green_box",
+      "seed": 910110003,
+      "duration": 25,
+      "trial_id": "audit_same_color_green_box_910110003_hsv",
+      "output": ".\\reports\\closed_loop_verified",
+      "object_defs": [
+        "TARGET",
+        "DISTRACTOR_A",
+        "DISTRACTOR_B"
+      ],
+      "initial_target": [
+        0.45540757911854046,
+        -0.05512807803831242
+      ],
+      "initial_robot_heading": -0.03426671466869907,
+      "success": true,
+      "arrival_sim_seconds": 8.608,
+      "collision": false,
+      "object_contact_samples": 0,
+      "minimum_target_gap_m": 0.003008133831975325,
+      "max_forward_rad_s": 2.199999994442861,
+      "max_forward_during_occlusion_rad_s": null,
+      "inference_median_ms": 0.6616000027861446,
+      "inference_p95_ms": 0.9162999922409654,
+      "samples": 781,
+      "states": [
+        "approach",
+        "blocked",
+        "track"
+      ],
+      "wall_seconds": 5.07500219999929,
+      "world_sha256": "ebf641911d4c345cdd20f3db4aaaf9ec05fb19042ebd72b5e6a47d82f03bbbc6"
+    }
+  ]
+}
