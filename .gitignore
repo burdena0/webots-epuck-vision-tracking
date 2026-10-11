@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.log
+worlds/benchmark_*.wbt
+worlds/.*.wbproj
+.pytest_cache/
+runs/

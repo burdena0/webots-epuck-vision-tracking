@@ -1,0 +1,25 @@
+{
+  "case": "offset",
+  "backend": "hsv",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 8.544,
+  "minimum_target_gap_m": 0.019,
+  "travelled_m": 0.3213,
+  "mean_visible_alignment_error": 0.0061,
+  "mean_centroid_difference_vs_hsv_pixels": 0.0,
+  "inference_median_ms": 0.618,
+  "inference_p95_ms": 0.819,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 984,
+  "final_position": [
+    0.3040186730965502,
+    0.10352839564693461,
+    -6.39546786347471e-05
+  ],
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}

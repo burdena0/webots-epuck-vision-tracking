@@ -1,0 +1,25 @@
+{
+  "case": "moving",
+  "backend": "neural",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 7.84,
+  "minimum_target_gap_m": 0.018,
+  "travelled_m": 0.3103,
+  "mean_visible_alignment_error": 0.0033,
+  "mean_centroid_difference_vs_hsv_pixels": 0.291,
+  "inference_median_ms": 1.295,
+  "inference_p95_ms": 1.628,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 1006,
+  "final_position": [
+    0.30497178173860906,
+    0.051473869373993286,
+    -6.394154866408777e-05
+  ],
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}

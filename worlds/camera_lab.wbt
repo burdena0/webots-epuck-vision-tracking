@@ -1,0 +1,65 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+  basicTimeStep 32
+  randomSeed 11
+}
+Viewpoint {
+  orientation -0.4154401167146857 -0.09447182352787759 0.9047013783472454 3.5001381890152783
+  position 1.3543423977157838 0.40581193616066175 1.4044818639039172
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+Solid {
+  translation 0.5 0 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.12 0.12 0.2
+      }
+    }
+  ]
+  name "red target"
+  boundingObject Box {
+    size 0.12 0.12 0.2
+  }
+}
+DEF _ E-puck {
+  hidden position_0_0 6.158220910814146e-08
+  hidden position_0_1 -4.310637887688224e-10
+  hidden linearVelocity_0 7.100359706296624e-13 -3.888532478972554e-15 -1.9895196601282807e-15
+  hidden angularVelocity_0 -9.416505759194963e-14 4.7031904474339477e-11 -2.3160301129080722e-07
+  hidden rotation_1 0 1 0 5.960464477539063e-08
+  hidden linearVelocity_1 6.146481893334978e-09 -2.541148849997728e-15 -1.1546324736693127e-15
+  hidden angularVelocity_1 3.409664412206852e-13 3.1011131267917903e-07 -2.316030151035093e-07
+  hidden rotation_2 0 1 0 0
+  hidden linearVelocity_2 -6.144591470822434e-09 -4.3131339643513505e-15 6.217257925716792e-16
+  hidden angularVelocity_2 1.3484376166256688e-13 -3.100169407448767e-07 -2.3160301662656432e-07
+  translation 1.758867535971927e-16 1.7819870352861225e-11 -6.396199578901501e-05
+  rotation 0.5502889947209954 0.000169591216987765 -0.8349742472242935 4.438085389916781e-09
+  controller "camera_view"
+  window "<generic>"
+  camera_width 320
+  camera_height 240
+  turretSlot [
+    Emitter {
+      name "telemetry"
+      channel 42
+    }
+  ]
+}

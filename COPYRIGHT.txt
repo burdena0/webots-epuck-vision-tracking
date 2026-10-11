@@ -1,0 +1,4 @@
+Copyright 2026 Anthony Burden. All rights reserved.
+
+Referenced Cyberbotics Webots assets retain their own licenses. This repository
+does not redistribute those asset sources. Dependencies retain their own licenses.

@@ -1,0 +1,24 @@
+{
+  "case": "center",
+  "backend": "neural",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 7.5200000000000005,
+  "minimum_target_gap_m": 0.0165,
+  "travelled_m": 0.3065,
+  "mean_visible_alignment_error": 0.0006,
+  "mean_centroid_difference_vs_hsv_pixels": 0.213,
+  "inference_median_ms": 1.346,
+  "inference_p95_ms": 1.775,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 1016,
+  "final_position": [
+    0.30652495828982734,
+    6.585802100935181e-09,
+    -6.395800795825322e-05
+  ],
+  "states": [
+    "approach",
+    "blocked"
+  ]
+}

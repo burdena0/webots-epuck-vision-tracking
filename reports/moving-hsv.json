@@ -1,0 +1,25 @@
+{
+  "case": "moving",
+  "backend": "hsv",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 7.872,
+  "minimum_target_gap_m": 0.018,
+  "travelled_m": 0.3105,
+  "mean_visible_alignment_error": 0.0032,
+  "mean_centroid_difference_vs_hsv_pixels": 0.0,
+  "inference_median_ms": 0.604,
+  "inference_p95_ms": 0.738,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 1005,
+  "final_position": [
+    0.3050424577564826,
+    0.05189187860638117,
+    -6.394565666301491e-05
+  ],
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case": "obstacle",
+  "backend": "neural",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": null,
+  "minimum_target_gap_m": 0.3229,
+  "travelled_m": 0.0002,
+  "mean_visible_alignment_error": 0.0046,
+  "mean_centroid_difference_vs_hsv_pixels": 1.775,
+  "inference_median_ms": 1.042,
+  "inference_p95_ms": 1.392,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 0,
+  "final_position": [
+    0.00010949188791352009,
+    -3.686620855042438e-06,
+    -6.39619957884148e-05
+  ],
+  "states": [
+    "approach",
+    "lost",
+    "search"
+  ]
+}

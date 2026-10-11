@@ -1,0 +1,24 @@
+{
+  "case": "obstacle",
+  "backend": "original",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": null,
+  "minimum_target_gap_m": 0.1738,
+  "travelled_m": 0.3885,
+  "mean_visible_alignment_error": 0.0046,
+  "mean_centroid_difference_vs_hsv_pixels": 15.533,
+  "inference_median_ms": 0.306,
+  "inference_p95_ms": 0.431,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 0,
+  "final_position": [
+    0.27546011484252036,
+    -0.2738700248671371,
+    -6.394205740545798e-05
+  ],
+  "states": [
+    "approach",
+    "track"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "case": "moving",
+  "backend": "original",
+  "samples": 1249,
+  "duration_sim_seconds": 40.0,
+  "arrival_sim_seconds": 32.064,
+  "minimum_target_gap_m": 0.0119,
+  "travelled_m": 0.3149,
+  "mean_visible_alignment_error": 0.0149,
+  "mean_centroid_difference_vs_hsv_pixels": 3.78,
+  "inference_median_ms": 0.307,
+  "inference_p95_ms": 0.433,
+  "max_forward_speed_during_occlusion_rad_s": null,
+  "blocked_samples": 248,
+  "final_position": [
+    0.3111210112141415,
+    0.04725038653904355,
+    -6.395684523282166e-05
+  ],
+  "states": [
+    "approach",
+    "blocked",
+    "track"
+  ]
+}

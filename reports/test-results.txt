@@ -1,0 +1,17 @@
+test_faults_stop (test_control.SafetyTests.test_faults_stop) ... ok
+test_hysteresis_keeps_stop_at_noisy_threshold (test_control.SafetyTests.test_hysteresis_keeps_stop_at_noisy_threshold) ... ok
+test_loss_stops_immediately_then_only_searches_in_place (test_control.SafetyTests.test_loss_stops_immediately_then_only_searches_in_place) ... ok
+test_low_confidence_never_drives_forward (test_control.SafetyTests.test_low_confidence_never_drives_forward) ... ok
+test_obstacle_overrides_off_center_turn (test_control.SafetyTests.test_obstacle_overrides_off_center_turn) ... ok
+test_turn_direction_and_speed_ramp (test_control.SafetyTests.test_turn_direction_and_speed_ramp) ... ok
+test_largest_target_wins_over_small_distractor (test_control.VisionTests.test_largest_target_wins_over_small_distractor) ... ok
+test_tiny_specks_are_not_a_target (test_control.VisionTests.test_tiny_specks_are_not_a_target) ... ok
+.venv\Lib\site-packages\torch\jit\_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+test_gray_scene_and_tiny_specks_are_rejected (test_neural.NeuralTests.test_gray_scene_and_tiny_specks_are_rejected) ... ok
+test_unseen_box_positions_and_shading (test_neural.NeuralTests.test_unseen_box_positions_and_shading) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.076s
+
+OK
