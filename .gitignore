@@ -4,7 +4,17 @@ __pycache__/
 *.pyc
 *.log
 worlds/benchmark_*.wbt
+!worlds/benchmark_audit_*.wbt
 worlds/.*.wbproj
 .pytest_cache/
 runs/
 data/targets_demo/
+
+# Keep generated prose reports local.
+/MODEL_CARD.md
+/docs/target_data.md
+/reports/results.md
+/reports/target_results.md
+/reports/perception_audit/README.md
+/reports/closed_loop_verified/README.md
+/reports/test-results.txt

@@ -1,0 +1,44 @@
+#VRML_SIM R2025a utf8
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+WorldInfo { basicTimeStep 32 randomSeed 910110001 }
+Viewpoint { position 1.2 0.8 1.4 orientation -0.4 0.2 0.9 3.2 }
+TexturedBackground { luminosity 0.12 }
+DirectionalLight { direction -0.6 -1 -1 ambientIntensity 0.05 intensity 0.12 castShadows TRUE }
+RectangleArena { floorSize 2 2 }
+DEF TARGET Solid {
+  translation 0.42353776055346876 -0.07409485893878776 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.02 0.01 0.8 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "target" boundingObject Box { size 0.12 0.12 0.2 }
+}
+DEF OBSTACLE Solid {
+  translation -0.8 -0.8 0.05
+  children [ Shape { appearance PBRAppearance { baseColor 0.25 0.25 0.25 roughness 1 metalness 0 } geometry Box { size 0.04 0.18 0.1 } } ]
+  name "obstacle" boundingObject Box { size 0.04 0.18 0.1 }
+}
+DEF EPUCK E-puck {
+  translation 0 0 0 rotation 0 0 1 -0.004101900856890842 controller "camera_view"
+  controllerArgs [ "--backend" "catalog" "--target" "blue_box" "--no-preview" "--hsv-settings" "C:\\Users\\gamev\\Documents\\Codex\\2026-10-11\\resume-builder-plugin-resumebuilder-openai-curated\\work\\webots-vision-evaluation\\reports\\perception_audit\\hsv_settings.json" ]
+  customData "audit_dim_blue_box_910110001_catalog" window ""
+  camera_width 320 camera_height 240
+  turretSlot [ Emitter { name "telemetry" channel 42 } ]
+}
+Robot {
+  supervisor TRUE controller "audit_supervisor" window ""
+  customData "{\"case\": \"dim\", \"backend\": \"catalog\", \"target\": \"blue_box\", \"seed\": 910110001, \"duration\": 25, \"trial_id\": \"audit_dim_blue_box_910110001_catalog\", \"output\": \"C:\\\\Users\\\\gamev\\\\Documents\\\\Codex\\\\2026-10-11\\\\resume-builder-plugin-resumebuilder-openai-curated\\\\work\\\\webots-vision-evaluation\\\\reports\\\\closed_loop_verified\", \"object_defs\": [\"TARGET\", \"DISTRACTOR_A\", \"DISTRACTOR_B\"], \"initial_target\": [0.42353776055346876, -0.07409485893878776], \"initial_robot_heading\": -0.004101900856890842}"
+  children [ Receiver { name "results" channel 42 } ]
+}
+
+DEF DISTRACTOR_A Solid {
+  translation 0.42353776055346876 -0.21 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.8 0.02 0.01 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "DISTRACTOR_A" boundingObject Box { size 0.12 0.12 0.2 }
+}
+
+DEF DISTRACTOR_B Solid {
+  translation 0.42353776055346876 0.21 0.1
+  children [ Shape { appearance PBRAppearance { baseColor 0.01 0.8 0.02 roughness 1 metalness 0 } geometry Box { size 0.12 0.12 0.2 } } ]
+  name "DISTRACTOR_B" boundingObject Box { size 0.12 0.12 0.2 }
+}
